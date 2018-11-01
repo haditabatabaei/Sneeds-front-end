@@ -1,0 +1,68 @@
+@font-face {
+    font-family: yekan;
+    src: url("../font/BYekan.ttf");
+}
+
+@font-face {
+    font-family: gadugi;
+    src: url("../font/gadugi.ttf");
+}
+
+@font-face {
+    font-family: iserif;
+    src: url("../font/is.ttf");
+}
+
+* {
+    direction: rtl !important;
+}
+
+.yekanFont {
+    font-family: yekan;
+}
+
+.gadugiFont {
+    font-family: gadugi;
+}
+
+.serifFont {
+    font-family: iserif;
+}
+
+.navbar-brand span.brandName {
+    font-size: 20px;
+}
+
+.navbar-brand span.brandLogo img {
+    max-width: 50px;
+    max-height: 50px;
+    margin-top: -10px;
+    margin-right: 10px;
+}
+
+.float-right {
+    float: right;
+}
+
+.float-left {
+    float: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.bookletSearchForm {
+    margin-top: 10px !important;
+}
+
+.bookletSearchForm input[type="text"] {
+}
+
+.colorWhite {
+    color: white;
+}
