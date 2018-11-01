@@ -92,9 +92,17 @@ body {
     width: 100%;
 }
 
-.customHover:hover {
-    background-color: #9c27b0 !important;
+.miniTopSpace {
+    margin-top: 5px !important;
+}
+
+.customHover a {
+    transition: all 0.3s ease-in-out;
+}
+
+.customHover:hover > a {
     color: white !important;
+    background-color: #9c27b0 !important;
 }
 
 .customCard {

@@ -47,18 +47,18 @@
             </div>
 
             <div class="collapse navbar-collapse serifFont" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav float-right text-right">
+                <ul class="nav navbar-nav navbar-right text-right">
                     <li class="customHover"><a href="booklet.html" target="_blank">صفحه جزوه</a></li>
                     <li class="dropdown customHover">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">جزوات <b class="caret"></b></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">&nbspجزوات&nbsp<b class="caret text-left"></b> </a>
                         <ul class="dropdown-menu text-center">
-                            <li><a href="#">مهندسی کامپیوتر</a></li>
-                            <li><a href="#">مهندسی برق</a></li>
-                            <li><a href="#">فیزیک</a></li>
+                            <li class="customHover"><a href="#">مهندسی کامپیوتر</a></li>
+                            <li class="customHover"><a href="#">مهندسی برق</a></li>
+                            <li class="customHover"><a href="#">فیزیک</a></li>
                             <li class="divider"></li>
-                            <li><a href="#">همه دسته ها</a></li>
+                            <li class="customHover"><a href="#">همه دسته ها</a></li>
                             <li class="divider"></li>
-                            <li><a href="#">دسته خاص</a></li>
+                            <li class="customHover"><a href="#">دسته خاص</a></li>
                         </ul>
                     </li>
 
@@ -125,20 +125,62 @@
                                 <a href="#pablo" class="yekanFont">نام جزوه</a>
                             </h4>
                             <p class="card-description serifFont text-justify">
-                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
-                                گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و
-                                برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی
-                                می باشد.
-                                <br>
-                                دسته ها :
-                                <br>
-                                <span class="label label-default gadugiFont">Default</span>
-                                <span class="label label-primary gadugiFont">Primary</span>
-                                <span class="label label-success gadugiFont">Success</span>
-                                <span class="label label-info gadugiFont">Info</span>
-                                <span class="label label-warning gadugiFont">Warning</span>
-                                <span class="label label-danger gadugiFont">Danger</span>
+                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
                             </p>
+
+
+                            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingTwo">
+                                        <a class="collapsed" role="button" data-toggle="collapse"
+                                           data-parent="#accordion" href="#collapseTwo" aria-expanded="false"
+                                           aria-controls="collapseTwo">
+                                            <h4 class="panel-title text-right serifFont">
+                                                اطلاعات بیشتر
+                                                <i class="material-icons">keyboard_arrow_down</i>
+                                            </h4>
+                                        </a>
+                                    </div>
+                                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel"
+                                         aria-labelledby="headingTwo">
+                                        <div class="panel-body">
+                                            <p class="serifFont text-justify">
+                                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingOne">
+                                        <a role="button" data-toggle="collapse" data-parent="#accordion"
+                                           href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            <h4 class="panel-title text-right serifFont">
+                                                برچسب ها
+                                                <i class="material-icons">keyboard_arrow_down</i>
+                                            </h4>
+                                        </a>
+                                    </div>
+                                    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel"
+                                         aria-labelledby="headingOne">
+                                        <div class="panel-body">
+                                            <p class="serifFont">
+                                                <span class="label label-default miniTopSpace">مهندسی-کامپیوتر</span>
+                                                <span class="label label-default miniTopSpace">جزوه-درسی</span>
+                                                <span class="label label-success miniTopSpace">مبانی برنامه نویسی</span>
+                                                <span class="label label-success miniTopSpace">مبانی برنامه نویسی</span>
+                                                <span class="label label-success miniTopSpace">awfawfیسی</span>
+                                                <span class="label label-success miniTopSpace">مبانی برنامه نawffwaawfبرنامه نویسی</span>
+                                                <span class="label label-success miniTopSpace">wafwafwaf</span>
+                                                <span class="label label-success miniTopSpace">a</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
                             <a href="#" class="text-center serifFont btn btn-primary mx-auto"> ورود به بخش
                                 دانلود </a>
                         </div>
@@ -558,7 +600,7 @@
                                        placeholder="نام دانشگاه">
                             </div>
                             <p class="text-right rtl serifFont topSpace">
-                               نوع جزوه/نمونه سوال را انتخاب کنید:
+                                نوع جزوه/نمونه سوال را انتخاب کنید:
                             </p>
                             <div class="input-group serifFont">
                                 <div class="checkbox">
@@ -600,7 +642,9 @@
             <div class="modal-footer">
                 <button type="button" class="btn btn-success serifFont float-right">جستجو</button>
                 <button type="button" class="btn btn-danger serifFont float-left" data-dismiss="modal">بستن</button>
-                <button type="button" class="btn btn-info serifFont float-right" onclick="clearAdvancedSearchForm()">پاک کردن</button>
+                <button type="button" class="btn btn-info serifFont float-right" onclick="clearAdvancedSearchForm()">پاک
+                    کردن
+                </button>
             </div>
         </div>
     </div>
