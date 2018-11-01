@@ -17,6 +17,10 @@
     direction: rtl !important;
 }
 
+body {
+    direction: rtl !important;
+}
+
 .yekanFont {
     font-family: yekan;
 }
@@ -56,6 +60,10 @@
     text-align: right;
 }
 
+.text-justify {
+    text-align: justify;
+}
+
 .bookletSearchForm {
     margin-top: 10px !important;
 }
@@ -65,4 +73,25 @@
 
 .colorWhite {
     color: white;
+}
+
+.customHover {
+    transition: all 0.2s ease-in-out;
+    border-radius: 2px;
+}
+
+.customHover:hover {
+    background-color: #9c27b0 !important;
+    color: white !important;
+}
+
+.customCard {
+    transition: all 0.3s ease-in-out;
+    border: 1px solid white;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+.customCard:hover {
+    border: 1px solid gray;
 }
