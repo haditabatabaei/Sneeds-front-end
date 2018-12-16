@@ -46,3 +46,13 @@ function clearAdvancedSearchForm() {
 $("#goUpBtn").click(function (){
     scrollTo(0,0);
 });
+
+(function(){
+    var inputElement = $("#siteFastSearch");
+
+    if(inputElement.offsetTop < 200)
+        inputElement.style.color = "white";
+    else
+        inputElement.style.color = "gray";
+    setTimeout(arguments.callee, 1000);
+})();
