@@ -42,3 +42,7 @@ function clearAdvancedSearchForm() {
         }
     }
 }
+
+$("#goUpBtn").click(function (){
+    scrollTo(0,0);
+});
