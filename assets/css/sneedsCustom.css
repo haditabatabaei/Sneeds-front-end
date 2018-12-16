@@ -17,9 +17,15 @@
     direction: rtl !important;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     direction: rtl !important;
 }
+
+
 
 .rtl {
     direction: rtl !important;
@@ -78,6 +84,10 @@ body {
 
 .text-justify {
     text-align: justify;
+}
+
+.miniRightSpace{
+    padding-right:5px !important;
 }
 
 .bookletSearchForm {
@@ -148,5 +158,5 @@ ul.nav li a{
 }
 
 .normalFontSize{
-    font-size:17px;
+    font-size:20px !important;
 }
