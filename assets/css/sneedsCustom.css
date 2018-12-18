@@ -160,3 +160,11 @@ ul.nav li a{
 .normalFontSize{
     font-size:20px !important;
 }
+
+.cafeCard img{
+    transition:all 0.1s ease-in-out;
+}
+
+.cafeCard:hover img{
+    border-radius:50px;
+}
