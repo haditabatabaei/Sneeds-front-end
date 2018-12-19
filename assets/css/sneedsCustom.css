@@ -161,6 +161,11 @@ ul.nav li a{
     font-size:20px !important;
 }
 
+.normalFontSize2{
+    font-size:18px !important;
+}
+
+
 .cafeCard img{
     transition:all 0.1s ease-in-out;
 }
