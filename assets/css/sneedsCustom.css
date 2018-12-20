@@ -17,7 +17,7 @@
     direction: rtl !important;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -25,18 +25,16 @@ body {
     direction: rtl !important;
 }
 
-
-
 .rtl {
     direction: rtl !important;
 }
 
-.d-block{
-    display:block !important;
+.d-block {
+    display: block !important;
 }
 
-.clearfix{
-    clear:both;
+.clearfix {
+    clear: both;
 }
 
 .topSpace {
@@ -86,8 +84,8 @@ body {
     text-align: justify;
 }
 
-.miniRightSpace{
-    padding-right:5px !important;
+.miniRightSpace {
+    padding-right: 5px !important;
 }
 
 .bookletSearchForm {
@@ -138,38 +136,47 @@ body {
     margin-right: 10px;
 }
 
-.goUpBtn{
-    transition:all 0.3s ease-in-out;
+.goUpBtn {
+    transition: all 0.3s ease-in-out;
 }
 
-.goUpBtn:hover{
-    background-color:#9c27b0 !important;
-}
-.customHoverButton{
-    transition:all 0.3s ease-in-out;
-    font-size:18px;
-}
-.customHoverButton:hover{
-    opacity:0.8;
+.goUpBtn:hover {
+    background-color: #9c27b0 !important;
 }
 
-ul.nav li a{
-    font-size:17px !important;
+.customHoverButton {
+    transition: all 0.3s ease-in-out;
+    font-size: 18px;
 }
 
-.normalFontSize{
-    font-size:20px !important;
+.customHoverButton:hover {
+    opacity: 0.8;
 }
 
-.normalFontSize2{
-    font-size:18px !important;
+ul.nav li a {
+    font-size: 17px !important;
 }
 
-
-.cafeCard img{
-    transition:all 0.1s ease-in-out;
+.normalFontSize {
+    font-size: 20px !important;
 }
 
-.cafeCard:hover img{
-    border-radius:50px;
+.normalFontSize2 {
+    font-size: 18px !important;
+}
+
+.cafeCard img {
+    transition: all 0.1s ease-in-out;
+}
+
+.cafeCard:hover img {
+    border-radius: 50px;
+}
+
+.activeLinkNewBgColor {
+    background-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+.activeLinkOldBgColor {
+    background-color: rgba(255, 255, 255, 0.1) !important;
 }

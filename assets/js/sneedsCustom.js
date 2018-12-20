@@ -43,16 +43,33 @@ function clearAdvancedSearchForm() {
     }
 }
 
-$("#goUpBtn").click(function (){
-    scrollTo(0,0);
+$("#goUpBtn").click(function () {
+    scrollTo(0, 0);
 });
 
-(function(){
+
+var topNavElement = $("nav.navbar-fixed-top");
+var activeListItemLink = topNavElement.find("ul.nav li.active > a");
+
+(function () {
+    // console.log("scroll X : " + scrollX + "\nScroll Y : " + scrollY);
+    if (scrollY >= 50) {
+        topNavElement.removeClass("navbar-transparent").addClass("navbar-default");
+        activeListItemLink.addClass("activeLinkNewBgColor").removeClass("activeLinkOldBgColor");
+    } else {
+        topNavElement.removeClass("navbar-default").addClass("navbar-transparent");
+        activeListItemLink.removeClass("activeLinkNewBgColor").addClass("activeLinkOldBgColor");
+    }
+    setTimeout(arguments.callee, 500);
+})
+
+
+(function () {
     var inputElement = $("#siteFastSearch");
 
-    if(inputElement.offsetTop < 200)
+    if (inputElement.offsetTop < 200)
         inputElement.style.color = "white";
     else
         inputElement.style.color = "gray";
     setTimeout(arguments.callee, 1000);
-})();
+});
