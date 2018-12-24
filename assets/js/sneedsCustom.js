@@ -60,13 +60,27 @@ var activeListItemLink = topNavElement.find("ul.nav li.active > a");
         topNavElement.removeClass("navbar-default").addClass("navbar-transparent");
         activeListItemLink.removeClass("activeLinkNewBgColor").addClass("activeLinkOldBgColor");
     }
+    var docWidth = document.body.offsetWidth;
+    // console.log("document width:" + docWidth);
+    var registerElement = $("#signUpCard");
+
+    if (docWidth <= 974) {
+        // console.log("asghar")
+        if (!registerElement.hasClass("fixTopMarginForRegister")) {
+            registerElement.addClass("fixTopMarginForRegister");
+        }
+    } else {
+        if (registerElement.hasClass("fixTopMarginForRegister")) {
+            registerElement.removeClass("fixTopMarginForRegister");
+        }
+    }
+
     setTimeout(arguments.callee, 500);
 })
 
 
 (function () {
     var inputElement = $("#siteFastSearch");
-
     if (inputElement.offsetTop < 200)
         inputElement.style.color = "white";
     else

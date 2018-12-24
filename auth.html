@@ -1,10 +1,359 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" style="height:100%">
 <head>
-    <meta charset="UTF-8">
-    <title>Sneeds Auth Page</title>
+    <meta charset="utf-8"/>
+    <!--<link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">-->
+    <link rel="icon" type="image/png" href="assets/img/sneedsLogo.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+
+    <title>جزوات اسنیدز، مرجع رفع نیاز های دانشجویی</title>
+
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport'/>
+
+    <!--     Fonts and icons     -->
+    <link rel="stylesheet" type="text/css"
+          href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css"/>
+
+    <!-- CSS Files -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="assets/css/material-kit.css?v=1.2.1" rel="stylesheet"/>
+    <link rel="stylesheet" href="assets/css/sneedsCustom.css">
+    <style>
+        .card{
+            margin-bottom:0 !important;
+        }
+    </style>
 </head>
-<body>
-<a href="cafeList.html">go back</a>
+<body style="height:100%">
+<!--<a href="#" class="goUpBtn btn btn-round btn-default btn-fab btn-fab-mini" id="goUpBtn" style="z-index:99999;position:absolute;bottom:0;left:0;">-->
+<!--<i class="material-icons">keyboard_arrow_up</i>-->
+<!--</a>-->
+<div id="siteTop"></div>
+<!-- Navbar will come here -->
+
+<nav class="navbar navbar-right navbar-transparent navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <a class="navbar-brand serifFont" href="http://www.sneeds.ir" target="_blank">
+                    <span class="serifFont brandName float-right">
+                        اسنیدز
+                    </span>
+                <span class="brandLogo float-left">
+                        <img src="assets/img/sneedsLogo.png" alt="sneeds logo" class="img-responsive">
+                    </span>
+            </a>
+        </div>
+
+        <div class="collapse navbar-collapse yekanFont" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right text-right rtl">
+                <li class="pull-right"><a href="#">صفحه اول</a></li>
+                <li class="pull-right active"><a href="bookletList.html">جزوات</a></li>
+                <li class="pull-right"><a href="cafeList.html" target="nk">کافه ها</a></li>
+                <li class="pull-right"><a href="booklet.html" target="">صفحه تکی جزوه</a></li>
+                <li class="pull-right"><a href="#" target="">لینک تست 1</a></li>
+                <li class="pull-right"><a href="#" target="">لینک تست 2</a></li>
+                <li class="pull-right"><a href="auth.html"
+                                          class="normalFontSize2 text-right rtl btn btn-round btn-primary">
+                    <i class="fas fa-sign-in-alt"></i>
+                    ورود / عضویت
+                </a></li>
+            </ul>
+
+            <form class="navbar-form navbar-left bookletSearchForm" role="search">
+                <div class="form-group form-primary">
+                    <input type="text" class="form-control yekanFont" style="width:200px"
+                           value="جستجوی سریع در کل سایت" id="siteFastSearch">
+                </div>
+                <button type="submit" class="btn btn-default btn-sm yekanFont">بگرد</button>
+            </form>
+
+        </div>
+    </div>
+</nav>
+
+
+<div class="page-header header-filter" style="background-image: url('assets/img/bg3.jpg'); background-size: cover; background-position: top center;">
+    <div class="container">
+        <div class="row rtl">
+            <div class="col-md-4 pull-right">
+                <div class="card card-signup" style="margin-bottom:0 !important;">
+                    <form class="form" method="" action="">
+                        <div class="header header-primary text-center">
+                            <h4 class="card-title yekanFont">ورود کاربر / کافه</h4>
+                            <div class="social-line">
+                                <!--<a href="#pablo" class="btn btn-just-icon btn-simple">-->
+                                <!--<i class="fa fa-facebook-square"></i>-->
+                                <!--</a>-->
+                                <!--<a href="#pablo" class="btn btn-just-icon btn-simple">-->
+                                <!--<i class="fa fa-twitter"></i>-->
+                                <!--</a>-->
+                                <a href="#pablo" class="btn btn-just-icon btn-simple">
+                                    <i class="fa fa-google-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!--<p class="description text-center">Or Be Classical</p>-->
+                        <div class="card-content">
+
+                            <div class="input-group">
+									<span class="input-group-addon">
+										<i class="material-icons">face</i>
+									</span>
+                                <div class="form-group"><input type="text" class="form-control yekanFont"
+                                                               placeholder="نام کاربری..."><span
+                                        class="material-input"></span></div>
+                            </div>
+
+                            <div class="input-group">
+									<span class="input-group-addon">
+										<i class="material-icons">email</i>
+									</span>
+                                <div class="form-group"><input type="text" class="form-control yekanFont"
+                                                               placeholder="ایمیل..."><span
+                                        class="material-input"></span></div>
+                            </div>
+
+                            <div class="input-group">
+									<span class="input-group-addon">
+										<i class="material-icons">lock_outline</i>
+									</span>
+                                <div class="form-group"><input type="password" placeholder="رمز عبور..."
+                                                               class="form-control yekanFont"><span
+                                        class="material-input"></span>
+                                </div>
+                            </div>
+
+                            <!-- If you want to add a checkbox to this form, uncomment this code
+
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="optionsCheckboxes" checked>
+                                    Subscribe to newsletter
+                                </label>
+                            </div> -->
+                        </div>
+                        <div class="footer text-center">
+                            <a href="#pablo" class="btn btn-primary btn-simple btn-wd btn-lg yekanFont normalFontSize">ورود</a>
+                            <a href="#pablo" class="btn btn-primary btn-simple btn-wd btn-lg yekanFont">فراموشی / <باز></باز>یابی رمز عبور</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-8 pull-left">
+                <div class="card card-signup" id="signUpCard">
+                    <form class="form" method="" action="">
+                        <div class="header header-info text-center">
+                            <h4 class="card-title yekanFont">ثبت نام کاربر</h4>
+                            <div class="social-line">
+                                <!--<a href="#pablo" class="btn btn-just-icon btn-simple">-->
+                                <!--<i class="fa fa-facebook-square"></i>-->
+                                <!--</a>-->
+                                <!--<a href="#pablo" class="btn btn-just-icon btn-simple">-->
+                                <!--<i class="fa fa-twitter"></i>-->
+                                <!--</a>-->
+                                <a href="#pablo" class="btn btn-just-icon btn-simple">
+                                    <i class="fa fa-google-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!--<p class="description text-center">Or Be Classical</p>-->
+                        <div class="card-content">
+
+                            <div class="input-group">
+									<span class="input-group-addon">
+										<i class="material-icons">face</i>
+									</span>
+                                <div class="form-group form-info">
+                                    <input type="text" class="form-control yekanFont" placeholder="نام کاربری..."><span
+                                        class="material-input"></span></div>
+                            </div>
+
+                            <div class="input-group">
+									<span class="input-group-addon">
+										<i class="material-icons">email</i>
+									</span>
+                                <div class="form-group form-info"><input type="text" class="form-control yekanFont"
+                                                               placeholder="ایمیل..."><span
+                                        class="material-input"></span></div>
+                            </div>
+
+                            <div class="input-group">
+									<span class="input-group-addon">
+										<i class="material-icons">lock_outline</i>
+									</span>
+                                <div class="form-group form-info"><input type="password" placeholder="رمز عبور..."
+                                                               class="form-control yekanFont"><span
+                                        class="material-input"></span>
+                                </div>
+                            </div>
+
+                            <div class="input-group">
+									<span class="input-group-addon">
+										<i class="material-icons">face</i>
+									</span>
+                                <div class="form-group form-info">
+                                    <input type="text" class="form-control yekanFont" placeholder="نام و نام خانوادگی..."><span
+                                        class="material-input"></span></div>
+                            </div>
+
+                            <!-- If you want to add a checkbox to this form, uncomment this code
+
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="optionsCheckboxes" checked>
+                                    Subscribe to newsletter
+                                </label>
+                            </div> -->
+                        </div>
+                        <div class="footer text-center">
+                            <a href="#pablo" class="btn btn-info btn-simple btn-wd btn-lg yekanFont normalFontSize">ثبت نام</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="footer footer-black footer-big">
+    <div class="container">
+        <div class="content">
+            <div class="row rtl text-right">
+                <div class="col-md-4">
+                    <h5 class="yekanFont">آخرین های اینستاگرام اسنیدز</h5>
+                    <div class="gallery-feed">
+                        <img src="assets/img/faces/card-profile6-square.jpg" class="img img-raised img-rounded"
+                             alt="img1">
+                        <img src="assets/img/faces/christian.jpg" class="img img-raised img-rounded" alt="img2">
+                        <img src="assets/img/faces/card-profile4-square.jpg" class="img img-raised img-rounded"
+                             alt="img3">
+                        <img src="assets/img/faces/card-profile1-square.jpg" class="img img-raised img-rounded"
+                             alt="img4">
+
+                        <img src="assets/img/faces/marc.jpg" class="img img-raised img-rounded" alt="img5">
+                        <img src="assets/img/faces/kendall.jpg" class="img img-raised img-rounded" alt="img6">
+                        <img src="assets/img/faces/card-profile5-square.jpg" class="img img-raised img-rounded"
+                             alt="img7">
+                        <img src="assets/img/faces/card-profile2-square.jpg" class="img img-raised img-rounded"
+                             alt="img8">
+                    </div>
+
+                </div>
+
+                <div class="col-md-4 ">
+                    <h5 class="yekanFont">اسنیدز در رسانه ها</h5>
+                    <div class="social-feed yekanFont rtl text-justify">
+                        <div class="feed-line">
+                            <i class="fa fa-twitter"></i>
+                            <p class="miniRightSpace">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                                استفاده از طراحان</p>
+                        </div>
+                        <div class="feed-line">
+                            <i class="fa fa-twitter"></i>
+                            <p class="miniRightSpace"> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
+                                با استفاده از طراحان
+                            </p>
+                        </div>
+                        <div class="feed-line">
+                            <i class="fa fa-facebook-square"></i>
+                            <p class="miniRightSpace"> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
+                                با استفاده از طراحان</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <h5 class="yekanFont">درباره اسنیدز</h5>
+                    <p class="yekanFont text-justify">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                        گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و
+                        برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی
+                        می باشد.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+
+        <hr>
+
+        <ul class="pull-right rtl text-right yekanFont normalFontSize">
+            <li>
+                <a href="#">
+                    لینک تست 1
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    لینک تست 2
+
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    لینک تست 3
+
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    لینک تست 4
+
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    لینک تست 5
+                </a>
+            </li>
+        </ul>
+
+        <div class="copyright pull-left">
+            Copyright ©
+            <script>document.write(new Date().getFullYear())</script>
+            Sneeds Co. All Rights Reserved
+        </div>
+    </div>
+</footer>
+
 </body>
+<!--   Core JS Files   -->
+<script src="assets/js/jquery.min.js" type="text/javascript"></script>
+<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="assets/js/material.min.js"></script>
+
+<!--    Plugin for Date Time Picker and Full Calendar Plugin   -->
+<script src="assets/js/moment.min.js"></script>
+
+<!--	Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/   -->
+<script src="assets/js/nouislider.min.js" type="text/javascript"></script>
+
+<!--	Plugin for the Datepicker, full documentation here: https://github.com/Eonasdan/bootstrap-datetimepicker   -->
+<script src="assets/js/bootstrap-datetimepicker.js" type="text/javascript"></script>
+
+<!--	Plugin for Select, full documentation here: http://silviomoreto.github.io/bootstrap-select   -->
+<script src="assets/js/bootstrap-selectpicker.js" type="text/javascript"></script>
+
+<!--	Plugin for Tags, full documentation here: http://xoxco.com/projects/code/tagsinput/   -->
+<script src="assets/js/bootstrap-tagsinput.js"></script>
+
+<!--	Plugin for Fileupload, full documentation here: http://www.jasny.net/bootstrap/javascript/#fileinput   -->
+<script src="assets/js/jasny-bootstrap.min.js"></script>
+
+<!--    Plugin For Google Maps   -->
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+
+
+<!--    Control Center for Material Kit: activating the ripples, parallax effects, scripts from the example pages etc    -->
+<script src="assets/js/material-kit.js?v=1.2.1" type="text/javascript"></script>
+<script src="assets/js/sneedsCustom.js" type="application/javascript"></script>
 </html>
