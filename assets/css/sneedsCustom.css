@@ -165,12 +165,13 @@ ul.nav li a {
     font-size: 18px !important;
 }
 
-.cafeCard img {
+.cafeCard{
     transition: all 0.1s ease-in-out;
 }
 
-.cafeCard:hover img {
-    border-radius: 50px;
+.cafeCard:hover {
+    /*border-radius: 200px;*/
+    border:1px solid gray;
 }
 
 .activeLinkNewBgColor {
