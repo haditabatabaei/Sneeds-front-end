@@ -84,7 +84,8 @@
 <div class="page-header header-filter" style="background-image: url('assets/img/bg3.jpg'); background-size: cover; background-position: top center;">
     <div class="container">
         <div class="row rtl">
-            <div class="col-md-4 pull-right">
+            <!--<div class="col-md-1"></div>-->
+            <div class="col-md-5">
                 <div class="card card-signup" style="margin-bottom:0 !important;">
                     <form class="form" method="" action="">
                         <div class="header header-primary text-center">
@@ -104,14 +105,14 @@
                         <!--<p class="description text-center">Or Be Classical</p>-->
                         <div class="card-content">
 
-                            <div class="input-group">
-									<span class="input-group-addon">
-										<i class="material-icons">face</i>
-									</span>
-                                <div class="form-group"><input type="text" class="form-control yekanFont"
-                                                               placeholder="نام کاربری..."><span
-                                        class="material-input"></span></div>
-                            </div>
+                            <!--<div class="input-group">-->
+                            <!--<span class="input-group-addon">-->
+                            <!--<i class="material-icons">face</i>-->
+                            <!--</span>-->
+                            <!--<div class="form-group"><input type="text" class="form-control yekanFont"-->
+                            <!--placeholder="نام کاربری..."><span-->
+                            <!--class="material-input"></span></div>-->
+                            <!--</div>-->
 
                             <div class="input-group">
 									<span class="input-group-addon">
@@ -143,12 +144,12 @@
                         </div>
                         <div class="footer text-center">
                             <a href="" class="btn btn-primary btn-simple btn-wd btn-lg yekanFont normalFontSize">ورود</a>
-                            <a href="" class="btn btn-primary btn-simple btn-wd btn-lg yekanFont">فراموشی / <باز></باز>یابی رمز عبور</a>
+                            <a href="" class="btn btn-primary btn-simple btn-wd btn-lg yekanFont">فراموشی / بازیابی رمز عبور</a>
                         </div>
                     </form>
                 </div>
             </div>
-            <div class="col-md-8 pull-left">
+            <div class="col-md-7">
                 <div class="card card-signup" id="signUpCard">
                     <form class="form" method="" action="">
                         <div class="header header-info text-center">
@@ -168,12 +169,21 @@
                         <!--<p class="description text-center">Or Be Classical</p>-->
                         <div class="card-content">
 
+                            <!--<div class="input-group">-->
+									<!--<span class="input-group-addon">-->
+										<!--<i class="material-icons">face</i>-->
+									<!--</span>-->
+                                <!--<div class="form-group form-info">-->
+                                    <!--<input type="text" class="form-control yekanFont" placeholder="نام کاربری..."><span-->
+                                        <!--class="material-input"></span></div>-->
+                            <!--</div>-->
+
                             <div class="input-group">
 									<span class="input-group-addon">
-										<i class="material-icons">face</i>
+										<i class="material-icons">email</i>
 									</span>
-                                <div class="form-group form-info">
-                                    <input type="text" class="form-control yekanFont" placeholder="نام کاربری..."><span
+                                <div class="form-group form-info"><input type="text" class="form-control yekanFont" name="registerEmail"
+                                                               placeholder="ایمیل..."><span
                                         class="material-input"></span></div>
                             </div>
 
@@ -181,8 +191,8 @@
 									<span class="input-group-addon">
 										<i class="material-icons">email</i>
 									</span>
-                                <div class="form-group form-info"><input type="text" class="form-control yekanFont"
-                                                               placeholder="ایمیل..."><span
+                                <div class="form-group form-info"><input type="text" class="form-control yekanFont" name="registerEmailCopy"
+                                                                         placeholder="دوباره ایمیل را وارد کنید..."><span
                                         class="material-input"></span></div>
                             </div>
 
@@ -192,6 +202,16 @@
 									</span>
                                 <div class="form-group form-info"><input type="password" placeholder="رمز عبور..."
                                                                class="form-control yekanFont"><span
+                                        class="material-input"></span>
+                                </div>
+                            </div>
+
+                            <div class="input-group">
+									<span class="input-group-addon">
+										<i class="material-icons">lock_outline</i>
+									</span>
+                                <div class="form-group form-info"><input type="password" placeholder="دوباره رمز عبور را وارد کنید..."
+                                                                         class="form-control yekanFont"><span
                                         class="material-input"></span>
                                 </div>
                             </div>
@@ -220,6 +240,7 @@
                     </form>
                 </div>
             </div>
+
         </div>
     </div>
 </div>
