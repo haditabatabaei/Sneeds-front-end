@@ -19,15 +19,86 @@
     <link href="assets/css/material-kit.css?v=1.2.1" rel="stylesheet"/>
     <link rel="stylesheet" href="assets/css/sneedsCustom.css">
     <style>
-        #myCarousel .nav a small {
-            display:block;
+        /*#myCarousel .nav a small {*/
+        /*display:block;*/
+        /*}*/
+        /*#myCarousel .nav {*/
+        /*background:#eee;*/
+        /*}*/
+        /*#myCarousel .nav a {*/
+        /*border-radius:0px;*/
+        /*}*/
+        .product-slider {
+            padding: 45px;
         }
-        #myCarousel .nav {
-            background:#eee;
+
+        .product-slider #carousel {
+            border: 4px solid #1089c0;
+            margin: 0;
         }
-        #myCarousel .nav a {
-            border-radius:0px;
+
+        .product-slider #thumbcarousel {
+            margin: 12px 0 0;
+            padding: 0 45px;
         }
+
+        .product-slider #thumbcarousel .item {
+            text-align: center;
+        }
+
+        .product-slider #thumbcarousel .item .thumb {
+            border: 4px solid #cecece;
+            width: 20%;
+            margin: 0 2%;
+            display: inline-block;
+            vertical-align: middle;
+            cursor: pointer;
+            max-width: 98px;
+        }
+
+        .product-slider #thumbcarousel .item .thumb:hover {
+            border-color: #1089c0;
+        }
+
+        .product-slider .item img {
+            width: 100%;
+            height: auto;
+        }
+
+        .carousel-control {
+            color: #0284b8;
+            text-align: center;
+            text-shadow: none;
+            font-size: 30px;
+            width: 30px;
+            height: 30px;
+            line-height: 20px;
+            top: 23%;
+        }
+
+        .carousel-control:hover, .carousel-control:focus, .carousel-control:active {
+            color: #333;
+        }
+
+        .carousel-caption, .carousel-control .fa {
+            font: normal normal normal 30px/26px FontAwesome;
+        }
+
+        .carousel-control {
+            background-color: rgba(0, 0, 0, 0);
+            bottom: auto;
+            font-size: 20px;
+            left: 0;
+            position: absolute;
+            top: 30%;
+            width: auto;
+        }
+
+        .carousel-control.right, .carousel-control.left {
+            background-color: rgba(0, 0, 0, 0);
+            background-image: none;
+        }
+
     </style>
 </head>
 <body class="product-page">
@@ -80,11 +151,12 @@
     </div>
 </nav>
 
-<div class="page-header header-filter" data-parallax="true" filter-color="rose" style="background-image: url(&quot;../assets/img/bg6.jpg&quot;); transform: translate3d(0px, 548.667px, 0px);">
+<div class="page-header header-filter" data-parallax="true" filter-color="primary"
+     style="background-image: url('assets/img/cafe.jpg'); transform: translate3d(0px, 0px, 0px);">
     <div class="container">
         <div class="row title-row">
             <div class="col-md-4 col-md-offset-8">
-                <button class="btn btn-white pull-right"><i class="material-icons">shopping_cart</i> 0 Items</button>
+                <!--<button class="btn btn-white pull-right"><i class="material-icons">shopping_cart</i> 0 Items</button>-->
             </div>
         </div>
     </div>
@@ -96,6 +168,47 @@
             <div class="row">
                 <div class="col-md-6 col-sm-6">
 
+                    <div class="product-slider">
+                        <div id="carousel" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="item active"> <img src="http://placehold.it/1600x700?text=Product+01"> </div>
+                                <div class="item"> <img src="http://placehold.it/1600x700?text=Product+02"> </div>
+                                <div class="item"> <img src="http://placehold.it/1600x700?text=Product+03"> </div>
+                                <div class="item"> <img src="http://placehold.it/1600x700?text=Product+04"> </div>
+                                <div class="item"> <img src="http://placehold.it/1600x700?text=Product+05"> </div>
+                                <div class="item"> <img src="http://placehold.it/1600x700?text=Product+06"> </div>
+                                <div class="item"> <img src="http://placehold.it/1600x700?text=Product+07"> </div>
+                                <div class="item"> <img src="http://placehold.it/1600x700?text=Product+08"> </div>
+                                <div class="item"> <img src="http://placehold.it/1600x700?text=Product+09"> </div>
+                                <div class="item"> <img src="http://placehold.it/1600x700?text=Product+10"> </div>
+                            </div>
+                        </div>
+                        <div class="clearfix">
+                            <div id="thumbcarousel" class="carousel slide" data-interval="false">
+                                <div class="carousel-inner">
+                                    <div class="item active">
+                                        <div data-target="#carousel" data-slide-to="0" class="thumb"><img src="http://placehold.it/100x80?text=Thumb+01"></div>
+                                        <div data-target="#carousel" data-slide-to="1" class="thumb"><img src="http://placehold.it/100x80?text=Thumb+02"></div>
+                                        <div data-target="#carousel" data-slide-to="2" class="thumb"><img src="http://placehold.it/100x80?text=Thumb+03"></div>
+                                        <div data-target="#carousel" data-slide-to="3" class="thumb"><img src="http://placehold.it/100x80?text=Thumb+04"></div>
+                                        <div data-target="#carousel" data-slide-to="4" class="thumb"><img src="http://placehold.it/100x80?text=Thumb+05"></div>
+                                    </div>
+                                    <div class="item">
+                                        <div data-target="#carousel" data-slide-to="5" class="thumb"><img src="http://placehold.it/100x80?text=Thumb+06"></div>
+                                        <div data-target="#carousel" data-slide-to="6" class="thumb"><img src="http://placehold.it/100x80?text=Thumb+07"></div>
+                                        <div data-target="#carousel" data-slide-to="7" class="thumb"><img src="http://placehold.it/100x80?text=Thumb+08"></div>
+                                        <div data-target="#carousel" data-slide-to="8" class="thumb"><img src="http://placehold.it/100x80?text=Thumb+08"></div>
+                                        <div data-target="#carousel" data-slide-to="9" class="thumb"><img src="http://placehold.it/100x80?text=Thumb+10"></div>
+                                    </div>
+                                </div>
+                                <!-- /carousel-inner -->
+                                <a class="left carousel-control" href="#thumbcarousel" role="button" data-slide="prev"> <i class="fa fa-angle-left" aria-hidden="true"></i> </a> <a class="right carousel-control" href="#thumbcarousel" role="button" data-slide="next"><i class="fa fa-angle-right" aria-hidden="true"></i> </a> </div>
+                            <!-- /thumbcarousel -->
+
+                        </div>
+                    </div>
+
+                    <!--
                     <div class="tab-content">
                         <div class="tab-pane" id="product-page1">
                             <img src="../assets/img/examples/product1.jpg">
@@ -110,316 +223,196 @@
                             <img src="../assets/img/examples/product4.jpg">
                         </div>
                     </div>
-                    <div class="nbs-flexisel-container"><div class="nbs-flexisel-inner"><ul class="nav flexi-nav nbs-flexisel-ul" role="tablist" id="flexiselDemo1" style="left: -1050px;"><li class="nbs-flexisel-item" style="width: 175px;">
-                        <a href="#product-page1" role="tab" data-toggle="tab" aria-expanded="false">
-                            <img src="../assets/img/examples/product1.jpg">
-                        </a>
-                    </li><li class="nbs-flexisel-item" style="width: 175px;">
-                        <a href="#product-page2" role="tab" data-toggle="tab" aria-expanded="false">
-                            <img src="../assets/img/examples/product2.jpg">
-                        </a>
-                    </li><li class="nbs-flexisel-item" style="width: 175px;">
-                        <a href="#product-page3" role="tab" data-toggle="tab" aria-expanded="false">
-                            <img src="../assets/img/examples/product3.jpg">
-                        </a>
-                    </li><li class="nbs-flexisel-item" style="width: 175px;">
-                        <a href="#product-page4" role="tab" data-toggle="tab" aria-expanded="true">
-                            <img src="../assets/img/examples/product4.jpg">
-                        </a>
-                    </li><li class="nbs-flexisel-item index" style="width: 175px;">
-                        <a href="#product-page1" role="tab" data-toggle="tab" aria-expanded="false">
-                            <img src="../assets/img/examples/product1.jpg">
-                        </a>
-                    </li><li class="nbs-flexisel-item" style="width: 175px;">
-                        <a href="#product-page2" role="tab" data-toggle="tab" aria-expanded="false">
-                            <img src="../assets/img/examples/product2.jpg">
-                        </a>
-                    </li><li class="nbs-flexisel-item" style="width: 175px;">
-                        <a href="#product-page3" role="tab" data-toggle="tab" aria-expanded="false">
-                            <img src="../assets/img/examples/product3.jpg">
-                        </a>
-                    </li><li class="nbs-flexisel-item active" style="width: 175px;">
-                        <a href="#product-page4" role="tab" data-toggle="tab" aria-expanded="true">
-                            <img src="../assets/img/examples/product4.jpg">
-                        </a>
-                    </li>
-                        <li class="nbs-flexisel-item" style="width: 175px;">
-                            <a href="#product-page1" role="tab" data-toggle="tab" aria-expanded="false">
-                                <img src="../assets/img/examples/product1.jpg">
-                            </a>
-                        </li>
-                        <li class="nbs-flexisel-item" style="width: 175px;">
-                            <a href="#product-page2" role="tab" data-toggle="tab" aria-expanded="false">
-                                <img src="../assets/img/examples/product2.jpg">
-                            </a>
-                        </li><li class="nbs-flexisel-item" style="width: 175px;">
-                            <a href="#product-page3" role="tab" data-toggle="tab" aria-expanded="false">
-                                <img src="../assets/img/examples/product3.jpg">
-                            </a>
-                        </li><li class="nbs-flexisel-item" style="width: 175px;">
-                            <a href="#product-page4" role="tab" data-toggle="tab" aria-expanded="true">
-                                <img src="../assets/img/examples/product4.jpg">
-                            </a>
-                        </li>
+                    <div class="nbs-flexisel-container">
+                        <div class="nbs-flexisel-inner">
+                            <ul class="nav flexi-nav nbs-flexisel-ul" role="tablist" id="flexiselDemo1"
+                                style="left: -622.5px;">
+                                <li class="nbs-flexisel-item" style="width: 103.75px;">
+                                    <a href="#product-page3" role="tab" data-toggle="tab" aria-expanded="false">
+                                        <img src="../assets/img/examples/product3.jpg">
+                                    </a>
+                                </li>
+                                <li class="nbs-flexisel-item" style="width: 103.75px;">
+                                    <a href="#product-page4" role="tab" data-toggle="tab" aria-expanded="true">
+                                        <img src="../assets/img/examples/product4.jpg">
+                                    </a>
+                                </li>
+                                <li class="nbs-flexisel-item" style="width: 103.75px;">
+                                    <a href="#product-page1" role="tab" data-toggle="tab" aria-expanded="false">
+                                        <img src="../assets/img/examples/product1.jpg">
+                                    </a>
+                                </li>
+                                <li class="nbs-flexisel-item" style="width: 103.75px;">
+                                    <a href="#product-page2" role="tab" data-toggle="tab" aria-expanded="false">
+                                        <img src="../assets/img/examples/product2.jpg">
+                                    </a>
+                                </li>
+                                <li class="nbs-flexisel-item" style="width: 103.75px;">
+                                    <a href="#product-page3" role="tab" data-toggle="tab" aria-expanded="false">
+                                        <img src="../assets/img/examples/product3.jpg">
+                                    </a>
+                                </li>
+                                <li class="nbs-flexisel-item" style="width: 103.75px;">
+                                    <a href="#product-page4" role="tab" data-toggle="tab" aria-expanded="true">
+                                        <img src="../assets/img/examples/product4.jpg">
+                                    </a>
+                                </li>
+                                <li class="nbs-flexisel-item index" style="width: 103.75px;">
+                                    <a href="#product-page1" role="tab" data-toggle="tab" aria-expanded="false">
+                                        <img src="../assets/img/examples/product1.jpg">
+                                    </a>
+                                </li>
+                                <li class="nbs-flexisel-item" style="width: 103.75px;">
+                                    <a href="#product-page2" role="tab" data-toggle="tab" aria-expanded="false">
+                                        <img src="../assets/img/examples/product2.jpg">
+                                    </a>
+                                </li>
+                                <li class="nbs-flexisel-item" style="width: 103.75px;">
+                                    <a href="#product-page3" role="tab" data-toggle="tab" aria-expanded="false">
+                                        <img src="../assets/img/examples/product3.jpg">
+                                    </a>
+                                </li>
+                                <li class="nbs-flexisel-item active" style="width: 103.75px;">
+                                    <a href="#product-page4" role="tab" data-toggle="tab" aria-expanded="true">
+                                        <img src="../assets/img/examples/product4.jpg">
+                                    </a>
+                                </li>
+                                <li class="nbs-flexisel-item" style="width: 103.75px;">
+                                    <a href="#product-page1" role="tab" data-toggle="tab" aria-expanded="false">
+                                        <img src="../assets/img/examples/product1.jpg">
+                                    </a>
+                                </li>
+                                <li class="nbs-flexisel-item" style="width: 103.75px;">
+                                    <a href="#product-page2" role="tab" data-toggle="tab" aria-expanded="false">
+                                        <img src="../assets/img/examples/product2.jpg">
+                                    </a>
+                                </li>
 
 
-                    </ul><div class="nbs-flexisel-nav-left"></div><div class="nbs-flexisel-nav-right"><i class="material-icons">chevron_right</i></div></div></div>
+                            </ul>
+                            <div class="nbs-flexisel-nav-left"></div>
+                            <div class="nbs-flexisel-nav-right"><i class="material-icons">chevron_right</i></div>
+                        </div>
+                    </div>
+                    -->
                 </div>
                 <div class="col-md-6 col-sm-6">
-                    <h2 class="title"> Becky Silk Blazer </h2>
-                    <h3 class="main-price">$335</h3>
+                    <h2 class="title yekanFont"> کافه اسنیدز </h2>
+                    <!--<h3 class="main-price">$335</h3>-->
                     <div id="acordeon">
+                        <hr>
+                        <p class="text-justify yekanFont">
+                            اگر اطراف انقلاب هستید و بعد از یک گذروندن یک روز سخت دنبال جایی برای قهوه نوشیدن و سرحال شدن میگردین٬ کافه پیکسل منتظر شماست 🙂
+                        </p>
+                        <hr>
+
                         <div class="panel-group" id="accordion">
+                            <!--<div class="panel panel-border panel-default">-->
+                                <!--<div class="panel-heading" role="tab" id="headingOne">-->
+                                    <!--<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"-->
+                                       <!--aria-expanded="true" aria-controls="collapseOne">-->
+                                        <!--<h4 class="panel-title">-->
+                                            <!--Description-->
+                                            <!--<i class="material-icons">keyboard_arrow_down</i>-->
+                                        <!--</h4>-->
+                                    <!--</a>-->
+                                <!--</div>-->
+                                <!--<div id="collapseOne" class="panel-collapse collapse in">-->
+                                    <!--<div class="panel-body">-->
+                                        <!--<p>Eres' daring 'Grigri Fortune' swimsuit has the fit and coverage of a bikini-->
+                                            <!--in a one-piece silhouette. This fuchsia style is crafted from the label's-->
+                                            <!--sculpting peau douce fabric and has flattering cutouts through the torso and-->
+                                            <!--back. Wear yours with mirrored sunglasses on vacation.</p>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</div>-->
                             <div class="panel panel-border panel-default">
                                 <div class="panel-heading" role="tab" id="headingOne">
-                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        <h4 class="panel-title">
-                                            Description
-                                            <i class="material-icons">keyboard_arrow_down</i>
-                                        </h4>
-                                    </a>
-                                </div>
-                                <div id="collapseOne" class="panel-collapse collapse in">
-                                    <div class="panel-body">
-                                        <p>Eres' daring 'Grigri Fortune' swimsuit has the fit and coverage of a bikini in a one-piece silhouette. This fuchsia style is crafted from the label's sculpting peau douce fabric and has flattering cutouts through the torso and back. Wear yours with mirrored sunglasses on vacation.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="panel panel-border panel-default">
-                                <div class="panel-heading" role="tab" id="headingOne">
-                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-controls="collapseOne">
-                                        <h4 class="panel-title">
-                                            Designer Information
+                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"
+                                       aria-controls="collapseOne">
+                                        <h4 class="panel-title yekanFont normalFontSize">
+                                            اطلاعات تماس
                                             <i class="material-icons">keyboard_arrow_down</i>
                                         </h4>
                                     </a>
                                 </div>
                                 <div id="collapseTwo" class="panel-collapse collapse">
                                     <div class="panel-body">
-                                        An infusion of West Coast cool and New York attitude, Rebecca Minkoff is synonymous with It girl style. Minkoff burst on the fashion scene with her best-selling 'Morning After Bag' and later expanded her offering with the Rebecca Minkoff Collection - a range of luxe city staples with a "downtown romantic" theme.
+                                        <div class="info info-horizontal" style="margin-right:0 !important;padding:0 !important;">
+                                            <div class="icon icon-primary pull-right" style="margin-left:5px !important;">
+                                                <i class="material-icons">party_mode</i>
+                                            </div>
+                                            <div class="description">
+                                                <h4 class="info-title yekanFont">کافه در اینستاگرام :</h4>
+                                                <a href="#">
+                                                    <p class="gadugiFont normalFontSize text-right " style="direction:ltr !important;"> @cafe_instaId
+                                                    </p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="info info-horizontal" style="margin-right:0 !important;padding:0 !important;">
+                                            <div class="icon icon-primary pull-right" style="margin-left:5px !important;">
+                                                <i class="material-icons">pin_drop</i>
+                                            </div>
+                                            <div class="description">
+                                                <h4 class="info-title yekanFont">آدرس کافه : </h4>
+                                                <p class="yekanFont normalFontSize text-justify"> تهران ، خیابان انقلاب پلاک ۱۰۸۶
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2258.193255557023!2d51.401726116832!3d35.701150220371105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8e010ef2425581%3A0x3e2947621f383c44!2sPixel+Caf%C3%A9!5e0!3m2!1sen!2s!4v1546327376147" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
                                     </div>
                                 </div>
                             </div>
                             <div class="panel panel-border panel-default">
                                 <div class="panel-heading" role="tab" id="headingOne">
-                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-controls="collapseOne">
-                                        <h4 class="panel-title">
-                                            Details and Care
+                                    <a role="button" data-toggle="collapse" data-parent="#accordion"
+                                       href="#collapseThree" aria-controls="collapseOne">
+                                        <h4 class="panel-title yekanFont normalFontSize">
+                                            اطلاعات تخفیف کافه
                                             <i class="material-icons">keyboard_arrow_down</i>
                                         </h4>
                                     </a>
                                 </div>
                                 <div id="collapseThree" class="panel-collapse collapse">
                                     <div class="panel-body">
-                                        <ul>
-                                            <li>Storm and midnight-blue stretch cotton-blend</li>
-                                            <li>Notch lapels, functioning buttoned cuffs, two front flap pockets, single vent, internal pocket</li>
-                                            <li>Two button fastening</li>
-                                            <li>84% cotton, 14% nylon, 2% elastane</li>
-                                            <li>Dry clean</li>
-                                        </ul>
+                                        <div class="info info-horizontal" style="margin-right:0 !important;padding:0 !important;">
+                                            <div class="icon icon-primary pull-right" style="margin-left:5px !important;">
+                                                <i class="material-icons">monetization_on</i>
+                                            </div>
+                                            <div class="description">
+                                                <h4 class="info-title yekanFont">مقدار :</h4>
+                                                <p class="yekanFont normalFontSize text-justify">15 درصد روی کل منو
+                                                </p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                     </div><!--  end acordeon -->
 
-                    <!--<div class="row pick-size">-->
-                        <!--<div class="col-md-6 col-sm-6">-->
-                            <!--<label>Select color</label>-->
-                            <!--<div class="btn-group bootstrap-select"><button type="button" class="btn dropdown-toggle select-with-transition" data-toggle="dropdown" role="button" title="Rose" aria-expanded="false"><span class="filter-option pull-left">Rose </span>&nbsp;<span class="bs-caret"><span class="caret"></span></span><div class="ripple-container"><div class="ripple ripple-on ripple-out" style="left: 833px; top: 852px; background-color: rgb(60, 72, 88); transform: scale(30.3125);"></div></div></button><div class="dropdown-menu open" role="combobox"><ul class="dropdown-menu inner" role="listbox" aria-expanded="false"><li data-original-index="0" class="selected"><a tabindex="0" class="" data-tokens="null" role="option" aria-disabled="false" aria-selected="true"><span class="text">Rose </span><span class="material-icons check-mark">done</span></a></li><li data-original-index="1"><a tabindex="0" class="" data-tokens="null" role="option" aria-disabled="false" aria-selected="false"><span class="text">Gray</span><span class="material-icons check-mark">done</span></a></li><li data-original-index="2"><a tabindex="0" class="" data-tokens="null" role="option" aria-disabled="false" aria-selected="false"><span class="text">White</span><span class="material-icons check-mark">done</span></a></li></ul></div><select class="selectpicker" data-style="select-with-transition" data-size="7" tabindex="-98">-->
-                                <!--<option value="1">Rose </option>-->
-                                <!--<option value="2">Gray</option>-->
-                                <!--<option value="3">White</option>-->
-                            <!--</select></div>-->
+                    <div class="alert alert-info">
+                        <!--<div class="container-fluid">-->
+                            <div class="alert-icon pull-right" style="margin-right:5px !important;margin-left:15px !important;">
+                                <i class="material-icons">info_outline</i>
+                            </div>
+                            <button type="button" class="close pull-left" data-dismiss="alert" aria-label="Close" style="margin-right:15px !important;margin-left:5px !important;">
+                                <span aria-hidden="true"><i class="material-icons">clear</i></span>
+                            </button>
+                            <p class="text-justify yekanFont normalFontSize">توجه : برای دریافت کد تخفیف باید حتما در حساب خود وارد شده باشید. </p>
                         <!--</div>-->
-                        <!--<div class="col-md-6 col-sm-6">-->
-                            <!--<label>Select size</label>-->
-                            <!--<div class="btn-group bootstrap-select"><button type="button" class="btn dropdown-toggle select-with-transition" data-toggle="dropdown" role="button" title="Small"><span class="filter-option pull-left">Small </span>&nbsp;<span class="bs-caret"><span class="caret"></span></span></button><div class="dropdown-menu open" role="combobox"><ul class="dropdown-menu inner" role="listbox" aria-expanded="false"><li data-original-index="0" class="selected"><a tabindex="0" class="" data-tokens="null" role="option" aria-disabled="false" aria-selected="true"><span class="text">Small </span><span class="material-icons check-mark">done</span></a></li><li data-original-index="1"><a tabindex="0" class="" data-tokens="null" role="option" aria-disabled="false" aria-selected="false"><span class="text">Medium</span><span class="material-icons check-mark">done</span></a></li><li data-original-index="2"><a tabindex="0" class="" data-tokens="null" role="option" aria-disabled="false" aria-selected="false"><span class="text">Large</span><span class="material-icons check-mark">done</span></a></li></ul></div><select class="selectpicker" data-style="select-with-transition" data-size="7" tabindex="-98">-->
-                                <!--<option value="1">Small </option>-->
-                                <!--<option value="2">Medium</option>-->
-                                <!--<option value="3">Large</option>-->
-                            <!--</select></div>-->
-                        <!--</div>-->
-                    <!--</div>-->
+                    </div>
+
                     <div class="row text-right">
-                        <button class="btn btn-rose btn-round">Add to Cart &nbsp;<i class="material-icons">shopping_cart</i></button>
+                        <button class="btn btn-primary yekanFont normalFontSize"> &nbsp; دریافت کد تخفیف &nbsp;<i
+                                class="material-icons">shopping_cart</i></button>
                     </div>
                 </div>
             </div>
         </div>
-
-        <!--<div class="features text-center">-->
-            <!--<div class="row">-->
-                <!--<div class="col-md-4">-->
-                    <!--<div class="info">-->
-                        <!--<div class="icon icon-info">-->
-                            <!--<i class="material-icons">local_shipping</i>-->
-                        <!--</div>-->
-                        <!--<h4 class="info-title">2 Days Delivery </h4>-->
-                        <!--<p>Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough.</p>-->
-                    <!--</div>-->
-                <!--</div>-->
-
-                <!--<div class="col-md-4">-->
-                    <!--<div class="info">-->
-                        <!--<div class="icon icon-success">-->
-                            <!--<i class="material-icons">verified_user</i>-->
-                        <!--</div>-->
-                        <!--<h4 class="info-title">Refundable Policy</h4>-->
-                        <!--<p>Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough.</p>-->
-                    <!--</div>-->
-                <!--</div>-->
-
-                <!--<div class="col-md-4">-->
-                    <!--<div class="info">-->
-                        <!--<div class="icon icon-rose">-->
-                            <!--<i class="material-icons">favorite</i>-->
-                        <!--</div>-->
-                        <!--<h4 class="info-title">Popular Item</h4>-->
-                        <!--<p>Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough.</p>-->
-                    <!--</div>-->
-                <!--</div>-->
-
-            <!--</div>-->
-        <!--</div>-->
-
-        <!--<div class="related-products">-->
-            <!--<h3 class="title text-center">You may also be interested in:</h3>-->
-
-            <!--<div class="row">-->
-                <!--<div class="col-sm-6 col-md-3">-->
-                    <!--<div class="card card-product">-->
-                        <!--<div class="card-image">-->
-                            <!--<a href="#pablo">-->
-                                <!--<img class="img" src="../assets/img/examples/card-product1.jpg">-->
-                            <!--</a>-->
-                            <!--<div class="colored-shadow" style="background-image: url(&quot;../assets/img/examples/card-product1.jpg&quot;); opacity: 1;"></div></div>-->
-
-                        <!--<div class="card-content">-->
-                            <!--<h6 class="category text-rose">Trending</h6>-->
-                            <!--<h4 class="card-title">-->
-                                <!--<a href="#pablo">Dolce &amp; Gabbana</a>-->
-                            <!--</h4>-->
-                            <!--<div class="card-description">-->
-                                <!--Dolce &amp; Gabbana's 'Greta' tote has been crafted in Italy from hard-wearing red textured-leather.-->
-                            <!--</div>-->
-                            <!--<div class="footer">-->
-                                <!--<div class="price">-->
-                                    <!--<h4>$1,459</h4>-->
-                                <!--</div>-->
-                                <!--<div class="stats">-->
-                                    <!--<button type="button" rel="tooltip" title="" class="btn btn-just-icon btn-simple btn-rose" data-original-title="Saved to Wishlist">-->
-                                        <!--<i class="material-icons">favorite</i>-->
-                                    <!--</button>-->
-                                <!--</div>-->
-                            <!--</div>-->
-
-                        <!--</div>-->
-
-                    <!--</div>-->
-                <!--</div>-->
-
-                <!--<div class="col-sm-6 col-md-3">-->
-                    <!--<div class="card card-product">-->
-                        <!--<div class="card-image">-->
-                            <!--<a href="#pablo">-->
-                                <!--<img class="img" src="../assets/img/examples/card-product3.jpg">-->
-                            <!--</a>-->
-                            <!--<div class="colored-shadow" style="background-image: url(&quot;../assets/img/examples/card-product3.jpg&quot;); opacity: 1;"></div></div>-->
-
-                        <!--<div class="card-content">-->
-                            <!--<h6 class="category text-muted">Popular</h6>-->
-                            <!--<h4 class="card-title">-->
-                                <!--<a href="#pablo">Balmain</a>-->
-                            <!--</h4>-->
-                            <!--<div class="card-description">-->
-                                <!--Balmain's mid-rise skinny jeans are cut with stretch to ensure they retain their second-skin fit but move comfortably.-->
-                            <!--</div>-->
-                            <!--<div class="footer">-->
-                                <!--<div class="price">-->
-                                    <!--<h4>$459</h4>-->
-                                <!--</div>-->
-                                <!--<div class="stats">-->
-                                    <!--<button type="button" rel="tooltip" title="" class="btn btn-just-icon btn-simple btn-default" data-original-title="Save to Wishlist">-->
-                                        <!--<i class="material-icons">favorite</i>-->
-                                    <!--</button>-->
-                                <!--</div>-->
-                            <!--</div>-->
-
-                        <!--</div>-->
-
-                    <!--</div>-->
-                <!--</div>-->
-
-                <!--<div class="col-sm-6 col-md-3">-->
-                    <!--<div class="card card-product">-->
-                        <!--<div class="card-image">-->
-                            <!--<a href="#pablo">-->
-                                <!--<img class="img" src="../assets/img/examples/card-product4.jpg">-->
-                            <!--</a>-->
-                            <!--<div class="colored-shadow" style="background-image: url(&quot;../assets/img/examples/card-product4.jpg&quot;); opacity: 1;"></div></div>-->
-
-                        <!--<div class="card-content">-->
-                            <!--<h6 class="category text-muted">Popular</h6>-->
-                            <!--<h4 class="card-title">-->
-                                <!--<a href="#pablo">Balenciaga</a>-->
-                            <!--</h4>-->
-                            <!--<div class="card-description">-->
-                                <!--Balenciaga's black textured-leather wallet is finished with the label's iconic 'Giant' studs. This is where you can...-->
-                            <!--</div>-->
-                            <!--<div class="footer">-->
-                                <!--<div class="price">-->
-                                    <!--<h4>$590</h4>-->
-                                <!--</div>-->
-                                <!--<div class="stats">-->
-                                    <!--<button type="button" rel="tooltip" title="" class="btn btn-just-icon btn-simple btn-rose" data-original-title="Saved to Wishlist">-->
-                                        <!--<i class="material-icons">favorite</i>-->
-                                    <!--</button>-->
-                                <!--</div>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</div>-->
-
-                <!--<div class="col-sm-6 col-md-3">-->
-                    <!--<div class="card card-product">-->
-                        <!--<div class="card-image">-->
-                            <!--<a href="#pablo">-->
-                                <!--<img class="img" src="../assets/img/examples/card-product2.jpg">-->
-                            <!--</a>-->
-                            <!--<div class="colored-shadow" style="background-image: url(&quot;../assets/img/examples/card-product2.jpg&quot;); opacity: 1;"></div></div>-->
-
-                        <!--<div class="card-content">-->
-                            <!--<h6 class="category text-rose">Trending</h6>-->
-                            <!--<h4 class="card-title">-->
-                                <!--<a href="#pablo">Dolce &amp; Gabbana</a>-->
-                            <!--</h4>-->
-                            <!--<div class="card-description">-->
-                                <!--Dolce &amp; Gabbana's 'Greta' tote has been crafted in Italy from hard-wearing red textured-leather.-->
-                            <!--</div>-->
-                            <!--<div class="footer">-->
-                                <!--<div class="price">-->
-                                    <!--<h4>$1,459</h4>-->
-                                <!--</div>-->
-                                <!--<div class="stats">-->
-                                    <!--<button type="button" rel="tooltip" title="" class="btn btn-just-icon btn-simple btn-default" data-original-title="Save to Wishlist">-->
-                                        <!--<i class="material-icons">favorite</i>-->
-                                    <!--</button>-->
-                                <!--</div>-->
-                            <!--</div>-->
-
-                        <!--</div>-->
-
-                    <!--</div>-->
-                <!--</div>-->
-
-            <!--</div>-->
-        <!--</div>-->
     </div>
 </div>
-
 
 
 <footer class="footer footer-black footer-big">
