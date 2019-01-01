@@ -39,7 +39,7 @@
 
         .product-slider #thumbcarousel {
             margin: 12px 0 0;
-            padding: 0 45px;
+            /*padding: 0 45px;*/
         }
 
         .product-slider #thumbcarousel .item {
@@ -98,7 +98,13 @@
             background-color: rgba(0, 0, 0, 0);
             background-image: none;
         }
+        .carousel-control.right{
+            margin-left:10px;
+        }
 
+        .carousel-control.left{
+            margin-right:10px;
+        }
     </style>
 </head>
 <body class="product-page">
@@ -171,34 +177,22 @@
                     <div class="product-slider">
                         <div id="carousel" class="carousel slide" data-ride="carousel">
                             <div class="carousel-inner">
-                                <div class="item active"> <img src="http://placehold.it/1600x700?text=Product+01"> </div>
-                                <div class="item"> <img src="http://placehold.it/1600x700?text=Product+02"> </div>
-                                <div class="item"> <img src="http://placehold.it/1600x700?text=Product+03"> </div>
-                                <div class="item"> <img src="http://placehold.it/1600x700?text=Product+04"> </div>
-                                <div class="item"> <img src="http://placehold.it/1600x700?text=Product+05"> </div>
-                                <div class="item"> <img src="http://placehold.it/1600x700?text=Product+06"> </div>
-                                <div class="item"> <img src="http://placehold.it/1600x700?text=Product+07"> </div>
-                                <div class="item"> <img src="http://placehold.it/1600x700?text=Product+08"> </div>
-                                <div class="item"> <img src="http://placehold.it/1600x700?text=Product+09"> </div>
-                                <div class="item"> <img src="http://placehold.it/1600x700?text=Product+10"> </div>
+                                <div class="item active"> <img src="assets/img/cafe1.jpg"> </div>
+                                <div class="item"> <img src="assets/img/cafe2.jpg"> </div>
+                                <div class="item"> <img src="assets/img/cafe3.jpg"> </div>
+                                <div class="item"> <img src="assets/img/cafe4.jpg"> </div>
+                                <div class="item"> <img src="assets/img/cafe.jpg"> </div>
                             </div>
                         </div>
                         <div class="clearfix">
                             <div id="thumbcarousel" class="carousel slide" data-interval="false">
                                 <div class="carousel-inner">
                                     <div class="item active">
-                                        <div data-target="#carousel" data-slide-to="0" class="thumb"><img src="http://placehold.it/100x80?text=Thumb+01"></div>
-                                        <div data-target="#carousel" data-slide-to="1" class="thumb"><img src="http://placehold.it/100x80?text=Thumb+02"></div>
-                                        <div data-target="#carousel" data-slide-to="2" class="thumb"><img src="http://placehold.it/100x80?text=Thumb+03"></div>
-                                        <div data-target="#carousel" data-slide-to="3" class="thumb"><img src="http://placehold.it/100x80?text=Thumb+04"></div>
-                                        <div data-target="#carousel" data-slide-to="4" class="thumb"><img src="http://placehold.it/100x80?text=Thumb+05"></div>
-                                    </div>
-                                    <div class="item">
-                                        <div data-target="#carousel" data-slide-to="5" class="thumb"><img src="http://placehold.it/100x80?text=Thumb+06"></div>
-                                        <div data-target="#carousel" data-slide-to="6" class="thumb"><img src="http://placehold.it/100x80?text=Thumb+07"></div>
-                                        <div data-target="#carousel" data-slide-to="7" class="thumb"><img src="http://placehold.it/100x80?text=Thumb+08"></div>
-                                        <div data-target="#carousel" data-slide-to="8" class="thumb"><img src="http://placehold.it/100x80?text=Thumb+08"></div>
-                                        <div data-target="#carousel" data-slide-to="9" class="thumb"><img src="http://placehold.it/100x80?text=Thumb+10"></div>
+                                        <div data-target="#carousel" data-slide-to="0" class="thumb"><img src="assets/img/cafe1.jpg"></div>
+                                        <div data-target="#carousel" data-slide-to="1" class="thumb"><img src="assets/img/cafe2.jpg"></div>
+                                        <div data-target="#carousel" data-slide-to="2" class="thumb"><img src="assets/img/cafe3.jpg"></div>
+                                        <div data-target="#carousel" data-slide-to="3" class="thumb"><img src="assets/img/cafe4.jpg"></div>
+                                        <div data-target="#carousel" data-slide-to="4" class="thumb"><img src="assets/img/cafe.jpg"></div>
                                     </div>
                                 </div>
                                 <!-- /carousel-inner -->
