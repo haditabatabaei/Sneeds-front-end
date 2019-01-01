@@ -95,7 +95,6 @@
         </div>
 
 
-
     </div>
 </div>
 
@@ -128,7 +127,7 @@
                             تخفیفات کافه شما
                         </a>
                         <!--<a type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#collapseExample"-->
-                           <!--aria-expanded="false" aria-controls="collapseExample">مشاهده پروفایل</a>-->
+                        <!--aria-expanded="false" aria-controls="collapseExample">مشاهده پروفایل</a>-->
                         <a type="button" class="btn btn-success">عملیات ها :</a>
                     </div>
                 </div>
@@ -142,54 +141,63 @@
                     </div>
                     <div class="collapse" id="collapseExample2">
                         <div class="card card-body" style="box-shadow:none !important;">
+                            <div class="input-group">
+		                        <span class="input-group-addon">
+			                        <i class="material-icons">search</i>
+		                        </span>
+                                <input id="myInput" type="text" class="form-control yekanFont" placeholder="جستجو در جدول زیر ...">
+                            </div>
                             <div class="table-responsive">
                                 <table class="table table-striped yekanFont">
                                     <thead>
                                     <tr>
                                         <th class="text-center">#</th>
-                                        <th class="text-right">اسم کافه</th>
+                                        <!--<th class="text-right">اسم کافه</th>-->
                                         <th class="text-right">کد تخفیف</th>
                                         <th class="text-right">تاریخ ایجاد کد</th>
                                         <th class="text-right">وضعیت کد</th>
                                     </tr>
                                     </thead>
-                                    <tbody>
+                                    <tbody  id="myTable">
                                     <tr>
                                         <td class="text-center">1</td>
-                                        <td>کافه اسنیدز</td>
+                                        <!--<td>کافه اسنیدز</td>-->
                                         <td>3987535897</td>
                                         <td>2019</td>
                                         <td class="td-actions text-right">
-                                            <button type="button" rel="tooltip" class="btn btn-success yekanFont"
+                                            <button type="button" rel="tooltip" class="btn btn-warning yekanFont"
                                                     data-original-title="" title="">
-                                                قابل استفاده
-                                                <!--<i class="material-icons">edit</i>-->
+                                                <i class="material-icons">edit</i>
+                                                تایید نشده، برای تایید کلیک کنید
+                                                <div class="ripple-container"></div>
                                             </button>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="text-center">2</td>
-                                        <td>کافه تست</td>
+                                        <!--<td>کافه تست</td>-->
                                         <td>398asghar7</td>
                                         <td>2013</td>
                                         <td class="td-actions text-right">
-                                            <button type="button" rel="tooltip" class="btn btn-success yekanFont"
+                                            <button type="button" rel="tooltip" class="btn btn-warning yekanFont"
                                                     data-original-title="" title="">
-                                                قابل استفاده
-                                                <!--<i class="material-icons">edit</i>-->
+                                                <i class="material-icons">edit</i>
+                                                تایید نشده، برای تایید کلیک کنید
+                                                <div class="ripple-container"></div>
                                             </button>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="text-center">3</td>
-                                        <td>کافه تست 2</td>
+                                        <!--<td>کافه تست 2</td>-->
                                         <td>398753cafe5897</td>
                                         <td>2019</td>
                                         <td class="td-actions text-right">
-                                            <button type="button" rel="tooltip" class="btn btn-danger yekanFont"
+                                            <button type="button" rel="tooltip" class="btn btn-success yekanFont"
                                                     data-original-title="" title="">
-                                                مصرف شده
-                                                <!--<i class="material-icons">edit</i>-->
+                                                <i class="material-icons">done</i>
+                                                تایید شده
+                                                <div class="ripple-container"></div>
                                             </button>
                                         </td>
                                     </tr>
@@ -207,7 +215,8 @@
                                     <span aria-hidden="true"><i class="material-icons">clear</i></span>
                                 </button>
                                 <p class="text-justify yekanFont normalFontSize">
-                                    توجه : فقط تخفیفاتی که استفاده نشده اند قابلیت استفاده دارند، برای دریافت کد تخفیف به صفحه کافه ها مراجعه کنید
+                                    توجه : فقط تخفیفاتی که استفاده نشده اند قابلیت استفاده دارند، برای دریافت کد تخفیف
+                                    به صفحه کافه ها مراجعه کنید
                                 </p>
                                 <!--</div>-->
                             </div>
