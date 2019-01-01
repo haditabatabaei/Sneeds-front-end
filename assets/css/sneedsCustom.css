@@ -185,3 +185,7 @@ ul.nav li a {
 .fixTopMarginForRegister {
     margin-top: 50px !important;
 }
+
+.normalFontSize > button {
+    font-size:17px !important;
+}
