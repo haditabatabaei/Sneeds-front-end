@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="assets/css/sneedsCustom.css">
     <title>Title</title>
 </head>
+
 <body>
 <nav class="navbar navbar-right navbar-transparent navbar-fixed-top" role="navigation">
     <div class="container-fluid">
@@ -285,7 +286,48 @@
                     </div>
                     <div class="collapse" id="settingsCollapse">
                         <div class="card card-body" style="box-shadow:none !important;">
-                            تنظیمات
+                            <form class="form" method="" action="">
+                                <div class="card-content">
+                                    <div class="input-group">
+											<span class="input-group-addon">
+												<i class="material-icons">face</i>
+											</span>
+                                        <div class="form-group"><input type="text" class="form-control yekanFont" value="نام و نام خانوادگی از سرور"><span class="material-input"></span></div>
+                                    </div>
+
+                                    <div class="input-group">
+											<span class="input-group-addon">
+												<i class="material-icons">email</i>
+											</span>
+                                        <div class="form-group"><input type="text" class="form-control yekanFont" value="ایمیل از سرور"><span class="material-input"></span></div>
+                                    </div>
+
+                                    <!--<div class="input-group">-->
+											<!--<span class="input-group-addon">-->
+												<!--<i class="material-icons">lock_outline</i>-->
+											<!--</span>-->
+                                        <!--<div class="form-group"><input type="password" placeholder="Password..." class="form-control"><span class="material-input"></span></div>-->
+                                    <!--</div>-->
+
+                                    <!-- If you want to add a checkbox to this form, uncomment this code -->
+
+                                </div>
+                                <div class="footer text-left" style="margin-left:30px;">
+                                    <button class="btn btn-success yekanFont normalFontSize">
+                                        <i class="material-icons">done</i>
+                                        ذخیره تغییرات
+                                        <div class="ripple-container"></div>
+
+                                    </button>
+
+                                    <button class="btn btn-warning yekanFont normalFontSize" data-toggle="modal" data-target="#loginModal">
+                                        <i class="material-icons">lock</i>
+                                        تغییر رمز عبور
+                                        <div class="ripple-container"></div>
+                                    </button>
+
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -398,7 +440,102 @@
     </div>
 </footer>
 
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-login">
+        <div class="modal-content">
+            <div class="card card-signup card-plain">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i
+                            class="material-icons">clear</i></button>
+
+                    <div class="header header-warning text-center">
+                        <h4 class="card-title yekanFont">تغییر رمز عبور</h4>
+                        <!--<div class="social-line">-->
+                        <!--<a href="#pablo" class="btn btn-just-icon btn-simple">-->
+                        <!--<i class="fa fa-facebook-square"></i>-->
+                        <!--</a>-->
+                        <!--<a href="#pablo" class="btn btn-just-icon btn-simple">-->
+                        <!--<i class="fa fa-twitter"></i>-->
+                        <!--</a>-->
+                        <!--<a href="#pablo" class="btn btn-just-icon btn-simple">-->
+                        <!--<i class="fa fa-google-plus"></i>-->
+                        <!--</a>-->
+                        <!--</div>-->
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <form class="form" method="" action="">
+                        <!--<p class="description text-center">Or Be Classical</p>-->
+                        <div class="card-content">
+
+                            <div class="input-group">
+								<span class="input-group-addon">
+									<i class="material-icons">lock_open</i>
+								</span>
+                                <div class="form-group form-warning">
+                                    <input type="password" class="form-control yekanFont normalFontSize" placeholder="رمز عبور فعلی...">
+                                    <span class="material-input"></span>
+                                </div>
+                            </div>
+                            <div class="input-group">
+								<span class="input-group-addon">
+									<i class="material-icons">lock</i>
+								</span>
+                                <div class="form-group form-warning">
+                                    <input type="password" class="form-control yekanFont normalFontSize" placeholder="رمز عبور جدید...">
+                                    <span class="material-input"></span>
+                                </div>
+                            </div>
+                            <div class="input-group">
+								<span class="input-group-addon">
+									<i class="material-icons">lock</i>
+									<i class="material-icons">done</i>
+								</span>
+                                <div class="form-group form-warning">
+                                    <input type="password" class="form-control yekanFont normalFontSize" placeholder="رمز عبور تکرار رمز عبور جدید...">
+                                    <span class="material-input"></span>
+                                </div>
+                            </div>
+
+                            <!--<div class="input-group">-->
+                            <!--<span class="input-group-addon">-->
+                            <!--<i class="material-icons">email</i>-->
+                            <!--</span>-->
+                            <!--<div class="form-group"><input type="text" class="form-control" placeholder="Email..."><span class="material-input"></span></div>-->
+                            <!--</div>-->
+
+                            <!--<div class="input-group">-->
+                            <!--<span class="input-group-addon">-->
+                            <!--<i class="material-icons">lock_outline</i>-->
+                            <!--</span>-->
+                            <!--<div class="form-group"><input type="password" placeholder="Password..." class="form-control"><span class="material-input"></span></div>-->
+                            <!--</div>-->
+
+                            <!-- If you want to add a checkbox to this form, uncomment this code
+
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="optionsCheckboxes" checked>
+                                    Subscribe to newsletter
+                                </label>
+                            </div> -->
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer text-center">
+                    <a href="#pablo" class="btn btn-simple btn-warning btn-wd yekanFont normalFontSize">
+                        تغییر رمز عبور
+                        <div class="ripple-container"></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 </body>
+
+
 <!--   Core JS Files   -->
 <script src="assets/js/jquery.min.js" type="text/javascript"></script>
 <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
