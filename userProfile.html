@@ -62,7 +62,8 @@
                     <i class="fas fa-sign-in-alt"></i>
                     پروفایل کاربر
                 </a></li>
-                <li class="pull-right"><a href="cafeAdmin.html" class="normalFontSize2 text-right rtl btn btn-round btn-info">
+                <li class="pull-right"><a href="cafeAdmin.html"
+                                          class="normalFontSize2 text-right rtl btn btn-round btn-info">
                     <i class="fas fa-sign-in-alt"></i>
                     پروفایل ادمین کافه
                 </a></li>
@@ -96,7 +97,6 @@
         </div>
 
 
-
     </div>
 </div>
 
@@ -119,420 +119,458 @@
             <hr>
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <div class="btn-group yekanFont normalFontSize2" role="group" aria-label="Basic example">
-                        <a type="button" class="btn btn-danger normalFontSize2">خروج از حساب</a>
-                        <a type="button" class="btn btn-info normalFontSize2" data-toggle="collapse" data-target="#settingsCollapse" aria-expanded="false" aria-controls="settingsCollapse">تنظیمات</a>
-                        <a type="button" class="btn btn-info normalFontSize2" data-toggle="collapse" data-target="#discountsCollapse" aria-expanded="false" aria-controls="discountsCollapse">تخفیفات کافه</a>
-                        <a type="button" class="btn btn-info normalFontSize2" data-toggle="collapse" data-target="#watchProfileCollapse" aria-expanded="false" aria-controls="watchProfileCollapse">مشاهده پروفایل</a>
-                        <a type="button" class="btn btn-info normalFontSize2" data-toggle="collapse" data-target="#downloadedBooklets" aria-expanded="false" aria-controls="downloadedBooklets">جزوات دانلود شده</a>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="collapse" id="watchProfileCollapse">
-                        <div class="card card-body" style="box-shadow:none !important;">
-                            پروفایل کاربر
+                    <div class="profile-tabs">
+                        <div class="nav-align-center">
+                            <ul class="nav nav-pills nav-pills-info nav-pills-icons yekanFont" role="tablist">
+                                <li class="">
+                                    <a href="#editProfile" role="tab" data-toggle="tab" aria-expanded="false">
+                                        <i class="material-icons">palette</i>
+                                        ویرایش پروفایل
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="#cafeDiscounts" role="tab" data-toggle="tab" aria-expanded="false">
+                                        <i class="material-icons">people</i>
+                                        تخفیفات کافه ها
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="#viewProfile" role="tab" data-toggle="tab" aria-expanded="true">
+                                        <i class="material-icons">camera</i>
+                                        مشاهده پروفایل
+                                    </a>
+                                </li>
+                                <li class="active">
+                                    <a href="#visitedBooklets" role="tab" data-toggle="tab" aria-expanded="true">
+                                        <i class="material-icons">camera</i>
+                                        جزوات مشاهده شده
+                                    </a>
+                                </li>
+                            </ul>
+
+
                         </div>
                     </div>
 
-                    <div class="collapse" id="downloadedBooklets">
-                        <div class="card card-body" style="box-shadow:none !important;">
-                            <hr>
-                            <h2 class="text-right yekanFont">لیست جزوات دانلود شده</h2>
-                            <div class="table-responsive">
-                                <table class="table table-striped yekanFont">
-                                    <thead>
-                                    <tr>
-                                        <th class="text-center">#</th>
-                                        <th class="text-right">اسم جزوه</th>
-                                        <th class="text-right">موضوع</th>
-                                        <th class="text-right">نویسنده</th>
-                                        <th class="text-right">لینک مشاهده</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                        <td class="text-center">1</td>
-                                        <td>معادلات دکتر واعظ پور</td>
-                                        <td>معادلات دیفرانسیل</td>
-                                        <td>آقای هادی</td>
-                                        <td class="td-actions text-right">
-                                            <a href="#" class="btn btn-success yekanFont">
-                                                <i class="material-icons">developer_board</i>
-                                                مشاهده جزوه
-                                            </a>
-                                            <!--<button type="button" rel="tooltip" class="btn btn-success yekanFont"-->
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="visitedBooklets">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h2 class="text-right yekanFont">لیست جزوات مشاهده شده</h2>
+                                    <div class="table-responsive">
+                                        <table class="table table-striped yekanFont">
+                                            <thead>
+                                            <tr>
+                                                <th class="text-center">#</th>
+                                                <th class="text-center">اسم جزوه</th>
+                                                <th class="text-center">موضوع</th>
+                                                <th class="text-center">نویسنده</th>
+                                                <th class="text-right">لینک مشاهده</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td class="text-center">1</td>
+                                                <td>معادلات دکتر واعظ پور</td>
+                                                <td>معادلات دیفرانسیل</td>
+                                                <td>آقای هادی</td>
+                                                <td class="td-actions text-right">
+                                                    <a href="#" class="btn btn-success yekanFont">
+                                                        <i class="material-icons">developer_board</i>
+                                                        مشاهده جزوه
+                                                    </a>
+                                                    <!--<button type="button" rel="tooltip" class="btn btn-success yekanFont"-->
                                                     <!--data-original-title="" title="">-->
-                                                <!--قابل استفاده-->
-                                                <!--&lt;!&ndash;<i class="material-icons">edit</i>&ndash;&gt;-->
-                                            <!--</button>-->
-                                        </td>
-                                    </tr>
-                                        <tr>
-                                        <td class="text-center">1</td>
-                                        <td>معادلات دکتر واعظ پور</td>
-                                        <td>معادلات دیفرانسیل</td>
-                                        <td>آقای هادی</td>
-                                        <td class="td-actions text-right">
-                                            <a href="#" class="btn btn-success yekanFont">
-                                                <i class="material-icons">developer_board</i>
-                                                مشاهده جزوه
-                                            </a>
-                                            <!--<button type="button" rel="tooltip" class="btn btn-success yekanFont"-->
-                                            <!--data-original-title="" title="">-->
-                                            <!--قابل استفاده-->
-                                            <!--&lt;!&ndash;<i class="material-icons">edit</i>&ndash;&gt;-->
-                                            <!--</button>-->
-                                        </td>
-                                    </tr>
-                                        <tr>
-                                        <td class="text-center">1</td>
-                                        <td>معادلات دکتر واعظ پور</td>
-                                        <td>معادلات دیفرانسیل</td>
-                                        <td>آقای هادی</td>
-                                        <td class="td-actions text-right">
-                                            <a href="#" class="btn btn-success yekanFont">
-                                                <i class="material-icons">developer_board</i>
-                                                مشاهده جزوه
-                                            </a>
-                                            <!--<button type="button" rel="tooltip" class="btn btn-success yekanFont"-->
-                                            <!--data-original-title="" title="">-->
-                                            <!--قابل استفاده-->
-                                            <!--&lt;!&ndash;<i class="material-icons">edit</i>&ndash;&gt;-->
-                                            <!--</button>-->
-                                        </td>
-                                    </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <hr >
-                        </div>
-                    </div>
-                    <div class="collapse" id="discountsCollapse">
-                        <div class="card card-body" style="box-shadow:none !important;">
-                            <hr>
-                            <h2 class="text-right yekanFont">لیست تخفیفات کافه ها</h2>
-                            <div class="table-responsive">
-                                <table class="table table-striped yekanFont">
-                                    <thead>
-                                    <tr>
-                                        <th class="text-center">#</th>
-                                        <th class="text-right">اسم کافه</th>
-                                        <th class="text-right">کد تخفیف</th>
-                                        <th class="text-right">تاریخ ایجاد کد</th>
-                                        <th class="text-right">وضعیت کد</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr>
-                                        <td class="text-center">1</td>
-                                        <td>کافه اسنیدز</td>
-                                        <td>3987535897</td>
-                                        <td>2019</td>
-                                        <td class="td-actions text-right">
-                                            <button type="button" rel="tooltip" class="btn btn-success yekanFont"
-                                                    data-original-title="" title="">
-                                                قابل استفاده
-                                                <!--<i class="material-icons">edit</i>-->
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center">2</td>
-                                        <td>کافه تست</td>
-                                        <td>398asghar7</td>
-                                        <td>2013</td>
-                                        <td class="td-actions text-right">
-                                            <button type="button" rel="tooltip" class="btn btn-success yekanFont"
-                                                    data-original-title="" title="">
-                                                قابل استفاده
-                                                <!--<i class="material-icons">edit</i>-->
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center">3</td>
-                                        <td>کافه تست 2</td>
-                                        <td>398753cafe5897</td>
-                                        <td>2019</td>
-                                        <td class="td-actions text-right">
-                                            <button type="button" rel="tooltip" class="btn btn-danger yekanFont"
-                                                    data-original-title="" title="">
-                                                مصرف شده
-                                                <!--<i class="material-icons">edit</i>-->
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <div class="alert alert-info">
-                                <!--<div class="container-fluid">-->
-                                <div class="alert-icon pull-right"
-                                     style="margin-right:5px !important;margin-left:15px !important;">
-                                    <i class="material-icons">info_outline</i>
+                                                    <!--قابل استفاده-->
+                                                    <!--&lt;!&ndash;<i class="material-icons">edit</i>&ndash;&gt;-->
+                                                    <!--</button>-->
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">1</td>
+                                                <td>معادلات دکتر واعظ پور</td>
+                                                <td>معادلات دیفرانسیل</td>
+                                                <td>آقای هادی</td>
+                                                <td class="td-actions text-right">
+                                                    <a href="#" class="btn btn-success yekanFont">
+                                                        <i class="material-icons">developer_board</i>
+                                                        مشاهده جزوه
+                                                    </a>
+                                                    <!--<button type="button" rel="tooltip" class="btn btn-success yekanFont"-->
+                                                    <!--data-original-title="" title="">-->
+                                                    <!--قابل استفاده-->
+                                                    <!--&lt;!&ndash;<i class="material-icons">edit</i>&ndash;&gt;-->
+                                                    <!--</button>-->
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">1</td>
+                                                <td>معادلات دکتر واعظ پور</td>
+                                                <td>معادلات دیفرانسیل</td>
+                                                <td>آقای هادی</td>
+                                                <td class="td-actions text-right">
+                                                    <a href="#" class="btn btn-success yekanFont">
+                                                        <i class="material-icons">developer_board</i>
+                                                        مشاهده جزوه
+                                                    </a>
+                                                    <!--<button type="button" rel="tooltip" class="btn btn-success yekanFont"-->
+                                                    <!--data-original-title="" title="">-->
+                                                    <!--قابل استفاده-->
+                                                    <!--&lt;!&ndash;<i class="material-icons">edit</i>&ndash;&gt;-->
+                                                    <!--</button>-->
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
                                 </div>
-                                <button type="button" class="close pull-left" data-dismiss="alert" aria-label="Close"
-                                        style="margin-right:15px !important;margin-left:5px !important;">
-                                    <span aria-hidden="true"><i class="material-icons">clear</i></span>
-                                </button>
-                                <p class="text-justify yekanFont normalFontSize">
-                                    توجه : فقط تخفیفاتی که استفاده نشده اند قابلیت استفاده دارند، برای دریافت کد تخفیف به صفحه کافه ها مراجعه کنید
-                                </p>
-                                <!--</div>-->
                             </div>
                         </div>
-                    </div>
-                    <div class="collapse" id="settingsCollapse">
-                        <div class="card card-body" style="box-shadow:none !important;">
-                            <form class="form" method="" action="">
-                                <div class="card-content">
-                                    <div class="input-group">
+                        <div class="tab-pane" id="viewProfile">
+                            <div class="row">
+                                <h4 class="yekanFont">مشاهده پروفایل کاربری</h4>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="cafeDiscounts">
+                            <div class="row">
+                                <h2 class="text-right yekanFont">لیست تخفیفات کافه ها</h2>
+                                <div class="table-responsive">
+                                    <table class="table table-striped yekanFont">
+                                        <thead>
+                                        <tr>
+                                            <th class="text-center">#</th>
+                                            <th class="text-center">اسم کافه</th>
+                                            <th class="text-center">کد تخفیف</th>
+                                            <th class="text-center">تاریخ ایجاد کد</th>
+                                            <th class="text-right">وضعیت کد</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td class="text-center">1</td>
+                                            <td>کافه اسنیدز</td>
+                                            <td>3987535897</td>
+                                            <td>2019</td>
+                                            <td class="td-actions text-right">
+                                                <button type="button" rel="tooltip" class="btn btn-success yekanFont" data-original-title="" title="">
+                                                    <i class="material-icons">done</i>
+                                                    قابل استفاده
+                                                </button>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="text-center">2</td>
+                                            <td>کافه تست</td>
+                                            <td>398asghar7</td>
+                                            <td>2013</td>
+                                            <td class="td-actions text-right">
+                                                <button type="button" rel="tooltip" class="btn btn-success yekanFont"
+                                                        data-original-title="" title="">
+                                                    <i class="material-icons">done</i>
+                                                    قابل استفاده
+                                                </button>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="text-center">3</td>
+                                            <td>کافه تست 2</td>
+                                            <td>398753cafe5897</td>
+                                            <td>2019</td>
+                                            <td class="td-actions text-right">
+                                                <button type="button" rel="tooltip" class="btn btn-danger yekanFont" data-original-title="" title="">
+                                                    <i class="material-icons">close</i>
+                                                    مصرف شده
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="alert alert-info">
+                                    <!--<div class="container-fluid">-->
+                                    <div class="alert-icon pull-right"
+                                         style="margin-right:5px !important;margin-left:15px !important;">
+                                        <i class="material-icons">info_outline</i>
+                                    </div>
+                                    <button type="button" class="close pull-left" data-dismiss="alert"
+                                            aria-label="Close"
+                                            style="margin-right:15px !important;margin-left:5px !important;">
+                                        <span aria-hidden="true"><i class="material-icons">clear</i></span>
+                                    </button>
+                                    <p class="text-justify yekanFont normalFontSize">
+                                        توجه : فقط تخفیفاتی که استفاده نشده اند قابلیت استفاده دارند، برای دریافت کد
+                                        تخفیف به صفحه کافه ها مراجعه کنید
+                                    </p>
+                                    <!--</div>-->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="editProfile">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h2 class="text-right yekanFont">ویرایش اطلاعات پروفایل</h2>
+                                    <form class="form" method="" action="">
+                                        <div class="card-content">
+                                            <div class="input-group">
 											<span class="input-group-addon">
 												<i class="material-icons">face</i>
 											</span>
-                                        <div class="form-group"><input type="text" class="form-control yekanFont" value="نام و نام خانوادگی از سرور"><span class="material-input"></span></div>
-                                    </div>
+                                                <div class="form-group"><input type="text"
+                                                                               class="form-control yekanFont"
+                                                                               value="نام و نام خانوادگی از سرور"><span
+                                                        class="material-input"></span></div>
+                                            </div>
 
-                                    <div class="input-group">
+                                            <div class="input-group">
 											<span class="input-group-addon">
 												<i class="material-icons">email</i>
 											</span>
-                                        <div class="form-group"><input type="text" class="form-control yekanFont" value="ایمیل از سرور"><span class="material-input"></span></div>
+                                                <div class="form-group"><input type="text"
+                                                                               class="form-control yekanFont"
+                                                                               value="ایمیل از سرور"><span
+                                                        class="material-input"></span></div>
+                                            </div>
+
+                                            <!--<div class="input-group">-->
+                                            <!--<span class="input-group-addon">-->
+                                            <!--<i class="material-icons">lock_outline</i>-->
+                                            <!--</span>-->
+                                            <!--<div class="form-group"><input type="password" placeholder="Password..." class="form-control"><span class="material-input"></span></div>-->
+                                            <!--</div>-->
+
+                                            <!-- If you want to add a checkbox to this form, uncomment this code -->
+
+                                        </div>
+                                        <div class="footer text-left" style="margin-left:30px;">
+                                            <button class="btn btn-success yekanFont normalFontSize">
+                                                <i class="material-icons">done</i>
+                                                ذخیره تغییرات
+                                                <div class="ripple-container"></div>
+
+                                            </button>
+                                        </div>
+                                    </form>
+                                    <div class="text-left row" style="margin-left:30px;">
+                                        <button class="btn btn-warning yekanFont normalFontSize" data-toggle="modal"
+                                                data-target="#loginModal">
+                                            <i class="material-icons">lock</i>
+                                            تغییر رمز عبور
+                                            <div class="ripple-container"></div>
+                                        </button>
                                     </div>
 
-                                    <!--<div class="input-group">-->
-											<!--<span class="input-group-addon">-->
-												<!--<i class="material-icons">lock_outline</i>-->
-											<!--</span>-->
-                                        <!--<div class="form-group"><input type="password" placeholder="Password..." class="form-control"><span class="material-input"></span></div>-->
-                                    <!--</div>-->
-
-                                    <!-- If you want to add a checkbox to this form, uncomment this code -->
-
                                 </div>
-                                <div class="footer text-left" style="margin-left:30px;">
-                                    <button class="btn btn-success yekanFont normalFontSize">
-                                        <i class="material-icons">done</i>
-                                        ذخیره تغییرات
-                                        <div class="ripple-container"></div>
+                            </div>
+                        </div>
+                    </div>
 
-                                    </button>
-                                </div>
-                            </form>
-                            <div class="text-left row" style="margin-left:30px;">
-                                <button class="btn btn-warning yekanFont normalFontSize" data-toggle="modal" data-target="#loginModal">
-                                    <i class="material-icons">lock</i>
-                                    تغییر رمز عبور
-                                    <div class="ripple-container"></div>
-                                </button>
+                </div>
+            </div><!-- section -->
+        </div>
+
+        <footer class="footer footer-black footer-big" style="margin-top:40px;">
+            <div class="container">
+                <div class="content">
+                    <div class="row rtl text-right">
+                        <div class="col-md-4">
+                            <h5 class="yekanFont">آخرین های اینستاگرام اسنیدز</h5>
+                            <div class="gallery-feed">
+                                <img src="assets/img/faces/card-profile6-square.jpg" class="img img-raised img-rounded"
+                                     alt="img1">
+                                <img src="assets/img/faces/christian.jpg" class="img img-raised img-rounded" alt="img2">
+                                <img src="assets/img/faces/card-profile4-square.jpg" class="img img-raised img-rounded"
+                                     alt="img3">
+                                <img src="assets/img/faces/card-profile1-square.jpg" class="img img-raised img-rounded"
+                                     alt="img4">
+
+                                <img src="assets/img/faces/marc.jpg" class="img img-raised img-rounded" alt="img5">
+                                <img src="assets/img/faces/kendall.jpg" class="img img-raised img-rounded" alt="img6">
+                                <img src="assets/img/faces/card-profile5-square.jpg" class="img img-raised img-rounded"
+                                     alt="img7">
+                                <img src="assets/img/faces/card-profile2-square.jpg" class="img img-raised img-rounded"
+                                     alt="img8">
                             </div>
 
                         </div>
+
+                        <div class="col-md-4 ">
+                            <h5 class="yekanFont">اسنیدز در رسانه ها</h5>
+                            <div class="social-feed yekanFont rtl text-justify">
+                                <div class="feed-line">
+                                    <i class="fa fa-twitter"></i>
+                                    <p class="miniRightSpace">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+                                        و با
+                                        استفاده از طراحان</p>
+                                </div>
+                                <div class="feed-line">
+                                    <i class="fa fa-twitter"></i>
+                                    <p class="miniRightSpace"> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+                                        و
+                                        با استفاده از طراحان</p>
+                                </div>
+                                <div class="feed-line">
+                                    <i class="fa fa-facebook-square"></i>
+                                    <p class="miniRightSpace"> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+                                        و
+                                        با استفاده از طراحان</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <h5 class="yekanFont">درباره اسنیدز</h5>
+                            <p class="yekanFont text-justify">
+                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                                گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و
+                                برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی
+                                می باشد.
+                            </p>
+                        </div>
+
                     </div>
                 </div>
+
+
+                <hr>
+
+                <ul class="pull-right rtl text-right yekanFont normalFontSize">
+                    <li>
+                        <a href="#">
+                            لینک تست 1
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            لینک تست 2
+
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            لینک تست 3
+
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            لینک تست 4
+
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            لینک تست 5
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="copyright pull-left">
+                    Copyright ©
+                    <script>document.write(new Date().getFullYear())</script>
+                    Sneeds Co. All Rights Reserved
+                </div>
+
             </div>
-            <hr>
-        </div>
-    </div><!-- section -->
+        </footer>
 
-</div>
+        <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+             aria-hidden="true">
+            <div class="modal-dialog modal-login">
+                <div class="modal-content">
+                    <div class="card card-signup card-plain">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i
+                                    class="material-icons">clear</i></button>
 
-<footer class="footer footer-black footer-big">
-    <div class="container">
-        <div class="content">
-            <div class="row rtl text-right">
-                <div class="col-md-4">
-                    <h5 class="yekanFont">آخرین های اینستاگرام اسنیدز</h5>
-                    <div class="gallery-feed">
-                        <img src="assets/img/faces/card-profile6-square.jpg" class="img img-raised img-rounded"
-                             alt="img1">
-                        <img src="assets/img/faces/christian.jpg" class="img img-raised img-rounded" alt="img2">
-                        <img src="assets/img/faces/card-profile4-square.jpg" class="img img-raised img-rounded"
-                             alt="img3">
-                        <img src="assets/img/faces/card-profile1-square.jpg" class="img img-raised img-rounded"
-                             alt="img4">
-
-                        <img src="assets/img/faces/marc.jpg" class="img img-raised img-rounded" alt="img5">
-                        <img src="assets/img/faces/kendall.jpg" class="img img-raised img-rounded" alt="img6">
-                        <img src="assets/img/faces/card-profile5-square.jpg" class="img img-raised img-rounded"
-                             alt="img7">
-                        <img src="assets/img/faces/card-profile2-square.jpg" class="img img-raised img-rounded"
-                             alt="img8">
-                    </div>
-
-                </div>
-
-                <div class="col-md-4 ">
-                    <h5 class="yekanFont">اسنیدز در رسانه ها</h5>
-                    <div class="social-feed yekanFont rtl text-justify">
-                        <div class="feed-line">
-                            <i class="fa fa-twitter"></i>
-                            <p class="miniRightSpace">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
-                                استفاده از طراحان</p>
+                            <div class="header header-warning text-center">
+                                <h4 class="card-title yekanFont">تغییر رمز عبور</h4>
+                                <!--<div class="social-line">-->
+                                <!--<a href="#pablo" class="btn btn-just-icon btn-simple">-->
+                                <!--<i class="fa fa-facebook-square"></i>-->
+                                <!--</a>-->
+                                <!--<a href="#pablo" class="btn btn-just-icon btn-simple">-->
+                                <!--<i class="fa fa-twitter"></i>-->
+                                <!--</a>-->
+                                <!--<a href="#pablo" class="btn btn-just-icon btn-simple">-->
+                                <!--<i class="fa fa-google-plus"></i>-->
+                                <!--</a>-->
+                                <!--</div>-->
+                            </div>
                         </div>
-                        <div class="feed-line">
-                            <i class="fa fa-twitter"></i>
-                            <p class="miniRightSpace"> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
-                                با استفاده از طراحان</p>
-                        </div>
-                        <div class="feed-line">
-                            <i class="fa fa-facebook-square"></i>
-                            <p class="miniRightSpace"> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
-                                با استفاده از طراحان</p>
-                        </div>
-                    </div>
-                </div>
+                        <div class="modal-body">
+                            <form class="form" method="" action="">
+                                <!--<p class="description text-center">Or Be Classical</p>-->
+                                <div class="card-content">
 
-                <div class="col-md-4">
-                    <h5 class="yekanFont">درباره اسنیدز</h5>
-                    <p class="yekanFont text-justify">
-                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
-                        گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و
-                        برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی
-                        می باشد.
-                    </p>
-                </div>
-
-            </div>
-        </div>
-
-
-        <hr>
-
-        <ul class="pull-right rtl text-right yekanFont normalFontSize">
-            <li>
-                <a href="#">
-                    لینک تست 1
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    لینک تست 2
-
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    لینک تست 3
-
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    لینک تست 4
-
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    لینک تست 5
-                </a>
-            </li>
-        </ul>
-
-        <div class="copyright pull-left">
-            Copyright ©
-            <script>document.write(new Date().getFullYear())</script>
-            Sneeds Co. All Rights Reserved
-        </div>
-
-    </div>
-</footer>
-
-<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-login">
-        <div class="modal-content">
-            <div class="card card-signup card-plain">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i
-                            class="material-icons">clear</i></button>
-
-                    <div class="header header-warning text-center">
-                        <h4 class="card-title yekanFont">تغییر رمز عبور</h4>
-                        <!--<div class="social-line">-->
-                        <!--<a href="#pablo" class="btn btn-just-icon btn-simple">-->
-                        <!--<i class="fa fa-facebook-square"></i>-->
-                        <!--</a>-->
-                        <!--<a href="#pablo" class="btn btn-just-icon btn-simple">-->
-                        <!--<i class="fa fa-twitter"></i>-->
-                        <!--</a>-->
-                        <!--<a href="#pablo" class="btn btn-just-icon btn-simple">-->
-                        <!--<i class="fa fa-google-plus"></i>-->
-                        <!--</a>-->
-                        <!--</div>-->
-                    </div>
-                </div>
-                <div class="modal-body">
-                    <form class="form" method="" action="">
-                        <!--<p class="description text-center">Or Be Classical</p>-->
-                        <div class="card-content">
-
-                            <div class="input-group">
+                                    <div class="input-group">
 								<span class="input-group-addon">
 									<i class="material-icons">lock_open</i>
 								</span>
-                                <div class="form-group form-warning">
-                                    <input type="password" class="form-control yekanFont normalFontSize" placeholder="رمز عبور فعلی...">
-                                    <span class="material-input"></span>
-                                </div>
-                            </div>
-                            <div class="input-group">
+                                        <div class="form-group form-warning">
+                                            <input type="password" class="form-control yekanFont normalFontSize"
+                                                   placeholder="رمز عبور فعلی...">
+                                            <span class="material-input"></span>
+                                        </div>
+                                    </div>
+                                    <div class="input-group">
 								<span class="input-group-addon">
 									<i class="material-icons">lock</i>
 								</span>
-                                <div class="form-group form-warning">
-                                    <input type="password" class="form-control yekanFont normalFontSize" placeholder="رمز عبور جدید...">
-                                    <span class="material-input"></span>
-                                </div>
-                            </div>
-                            <div class="input-group">
+                                        <div class="form-group form-warning">
+                                            <input type="password" class="form-control yekanFont normalFontSize"
+                                                   placeholder="رمز عبور جدید...">
+                                            <span class="material-input"></span>
+                                        </div>
+                                    </div>
+                                    <div class="input-group">
 								<span class="input-group-addon">
 									<i class="material-icons">lock</i>
 									<i class="material-icons">done</i>
 								</span>
-                                <div class="form-group form-warning">
-                                    <input type="password" class="form-control yekanFont normalFontSize" placeholder="رمز عبور تکرار رمز عبور جدید...">
-                                    <span class="material-input"></span>
+                                        <div class="form-group form-warning">
+                                            <input type="password" class="form-control yekanFont normalFontSize"
+                                                   placeholder="تکرار رمز عبور جدید...">
+                                            <span class="material-input"></span>
+                                        </div>
+                                    </div>
+
+                                    <!--<div class="input-group">-->
+                                    <!--<span class="input-group-addon">-->
+                                    <!--<i class="material-icons">email</i>-->
+                                    <!--</span>-->
+                                    <!--<div class="form-group"><input type="text" class="form-control" placeholder="Email..."><span class="material-input"></span></div>-->
+                                    <!--</div>-->
+
+                                    <!--<div class="input-group">-->
+                                    <!--<span class="input-group-addon">-->
+                                    <!--<i class="material-icons">lock_outline</i>-->
+                                    <!--</span>-->
+                                    <!--<div class="form-group"><input type="password" placeholder="Password..." class="form-control"><span class="material-input"></span></div>-->
+                                    <!--</div>-->
+
+                                    <!-- If you want to add a checkbox to this form, uncomment this code
+
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" name="optionsCheckboxes" checked>
+                                            Subscribe to newsletter
+                                        </label>
+                                    </div> -->
                                 </div>
-                            </div>
-
-                            <!--<div class="input-group">-->
-                            <!--<span class="input-group-addon">-->
-                            <!--<i class="material-icons">email</i>-->
-                            <!--</span>-->
-                            <!--<div class="form-group"><input type="text" class="form-control" placeholder="Email..."><span class="material-input"></span></div>-->
-                            <!--</div>-->
-
-                            <!--<div class="input-group">-->
-                            <!--<span class="input-group-addon">-->
-                            <!--<i class="material-icons">lock_outline</i>-->
-                            <!--</span>-->
-                            <!--<div class="form-group"><input type="password" placeholder="Password..." class="form-control"><span class="material-input"></span></div>-->
-                            <!--</div>-->
-
-                            <!-- If you want to add a checkbox to this form, uncomment this code
-
-                            <div class="checkbox">
-                                <label>
-                                    <input type="checkbox" name="optionsCheckboxes" checked>
-                                    Subscribe to newsletter
-                                </label>
-                            </div> -->
+                            </form>
                         </div>
-                    </form>
-                </div>
-                <div class="modal-footer text-center">
-                    <a href="#pablo" class="btn btn-simple btn-warning btn-wd yekanFont normalFontSize">
-                        تغییر رمز عبور
-                        <div class="ripple-container"></div>
-                    </a>
+                        <div class="modal-footer text-center">
+                            <a href="#pablo" class="btn btn-simple btn-warning btn-wd yekanFont normalFontSize">
+                                تغییر رمز عبور
+                                <div class="ripple-container"></div>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
 
 </body>
 
