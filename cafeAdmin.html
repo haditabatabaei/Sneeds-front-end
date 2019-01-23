@@ -51,15 +51,18 @@
                 <li class="pull-right"><a href="booklet.html">صفحه تکی جزوه</a></li>
                 <li class="pull-right"><a href="cafe.html">صفحه تکی کافه</a></li>
 
-                <li class="pull-right"><a href="auth.html" class="normalFontSize2 text-right rtl btn btn-round btn-primary">
+                <li class="pull-right"><a href="auth.html"
+                                          class="normalFontSize2 text-right rtl btn btn-round btn-primary">
                     <i class="fas fa-sign-in-alt"></i>
                     ورود / عضویت
                 </a></li>
-                <li class="pull-right"><a href="userProfile.html" class="normalFontSize2 text-right rtl btn btn-round btn-rose">
+                <li class="pull-right"><a href="userProfile.html"
+                                          class="normalFontSize2 text-right rtl btn btn-round btn-rose">
                     <i class="fas fa-sign-in-alt"></i>
                     پروفایل کاربر
                 </a></li>
-                <li class="pull-right"><a href="cafeAdmin.html" class="normalFontSize2 text-right rtl btn btn-round btn-info">
+                <li class="pull-right"><a href="cafeAdmin.html"
+                                          class="normalFontSize2 text-right rtl btn btn-round btn-info">
                     <i class="fas fa-sign-in-alt"></i>
                     پروفایل ادمین کافه
                 </a></li>
@@ -78,8 +81,8 @@
     </div>
 </nav>
 
-<div class="page-header header-filter header-small" data-parallax="true"
-     style="background-image: url(assets/img/cafe.jpg); transform: translate3d(0px, 0px, 0px);">
+<div class="page-header header-small" data-parallax="false"
+     style="background-size: cover;background-image: url(assets/img/cafe.jpg);">
     <div class="container">
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
@@ -91,15 +94,12 @@
                 </div>
             </div>
         </div>
-
-
     </div>
 </div>
 
 <div class="main main-raised">
     <div class="section">
         <div class="container">
-
             <div class="row">
                 <div class="col-md-12">
                     <nav aria-label="breadcrumb">
@@ -118,7 +118,7 @@
                     <div class="profile-tabs">
                         <div class="nav-align-center">
                             <div class="text-left">
-                                <a href="landing.html" class="btn btn-bg btn-danger yekanFont" >
+                                <a href="landing.html" class="btn btn-bg btn-danger yekanFont">
                                     خروج
                                     <i class="material-icons" style="transform: rotate(180deg);">exit_to_app</i>
                                 </a>
@@ -136,23 +136,34 @@
                                         تخفیفات کافه
                                     </a>
                                 </li>
+                                <li class="">
+                                    <a href="#editCafeDiscounts" role="tab" data-toggle="tab" aria-expanded="true">
+                                        <i class="material-icons">settings</i>
+                                        ویرایش تخفیفات کافه
+                                    </a>
+                                </li>
                             </ul>
-
-
                         </div>
                     </div>
                     <div class="tab-content" style="margin-top:30px;">
                         <!---->
                         <div class="tab-pane active" id="cafeDiscounts">
-
                             <div class="row">
-                                <h2 class="text-right yekanFont">تخفیفات کافه شما</h2>
+                                <div class="col-md-12">
+                                    <div class="pull-right">
+                                        <h2 class="text-right yekanFont">تخفیفات کافه شما</h2>
+                                    </div>
+                                    <div class="pull-left" style="margin-top:20px !important;">
+                                        <a href="#" class="btn btn-success yekanFont">آرشیو تخفیفات</a>
+                                    </div>
+                                </div>
                                 <hr>
                                 <div class="input-group">
 		                        <span class="input-group-addon">
 			                        <i class="material-icons">search</i>
 		                        </span>
-                                    <input id="myInput" type="text" class="form-control yekanFont" placeholder="جستجو در جدول زیر ...">
+                                    <input id="myInput" type="text" class="form-control yekanFont"
+                                           placeholder="جستجو در جدول زیر ...">
                                 </div>
                                 <div class="table-responsive">
                                     <table class="table table-striped yekanFont">
@@ -165,7 +176,7 @@
                                             <th class="text-right">وضعیت کد</th>
                                         </tr>
                                         </thead>
-                                        <tbody  id="myTable">
+                                        <tbody id="myTable">
                                         <tr>
                                             <td class="text-center">1</td>
                                             <!--<td>کافه اسنیدز</td>-->
@@ -217,12 +228,14 @@
                                          style="margin-right:5px !important;margin-left:15px !important;">
                                         <i class="material-icons">info_outline</i>
                                     </div>
-                                    <button type="button" class="close pull-left" data-dismiss="alert" aria-label="Close"
+                                    <button type="button" class="close pull-left" data-dismiss="alert"
+                                            aria-label="Close"
                                             style="margin-right:15px !important;margin-left:5px !important;">
                                         <span aria-hidden="true"><i class="material-icons">clear</i></span>
                                     </button>
                                     <p class="text-justify yekanFont normalFontSize">
-                                        توجه : بعد اعمال کد تخفیفتان در محل کافه برای مشتری، حتما آن را در جدول بالا تایید کنید
+                                        توجه : بعد اعمال کد تخفیفتان در محل کافه برای مشتری، حتما آن را در جدول بالا
+                                        تایید کنید
                                     </p>
                                     <!--</div>-->
                                 </div>
@@ -238,9 +251,9 @@
 											<span class="input-group-addon">
 												<i class="material-icons">local_cafe</i>
 											</span>
-                                                <div class="form-group"><input type="text"
-                                                                               class="form-control yekanFont"
-                                                                               value="نام کافه از سرور..."><span
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control yekanFont"
+                                                           value="نام کافه از سرور..."><span
                                                         class="material-input"></span></div>
                                             </div>
 
@@ -249,7 +262,8 @@
 												    <i class="material-icons">place</i>
 											    </span>
                                                 <div class="form-group">
-                                                    <input type="text" class="form-control yekanFont" value="آدرس کافه از سرور...">
+                                                    <input type="text" class="form-control yekanFont"
+                                                           value="آدرس کافه از سرور...">
                                                     <span class="material-input"></span>
                                                 </div>
                                             </div>
@@ -259,7 +273,8 @@
 												    <i class="material-icons">camera_alt</i>
 											    </span>
                                                 <div class="form-group">
-                                                    <input type="text" class="form-control yekanFont" value="آیدی اینستا کافه از سرور...">
+                                                    <input type="text" class="form-control yekanFont"
+                                                           value="آیدی اینستا کافه از سرور...">
                                                     <span class="material-input"></span>
                                                 </div>
                                             </div>
@@ -269,7 +284,8 @@
 												    <i class="material-icons">assignment</i>
 											    </span>
                                                 <div class="form-group">
-                                                    <textarea name="" id="" cols="30" rows="10" class="form-control yekanFont">توضیحات کافه از سمت سرور به این قسمت ارسال شود</textarea>
+                                                    <textarea name="" id="" cols="30" rows="10"
+                                                              class="form-control yekanFont">توضیحات کافه از سمت سرور به این قسمت ارسال شود</textarea>
                                                     <span class="material-input"></span>
                                                 </div>
                                             </div>
@@ -295,20 +311,116 @@
                                         </div>
                                     </form>
                                     <div class="text-left row" style="margin-left:30px;">
-                                        <button class="btn btn-warning yekanFont normalFontSize" data-toggle="modal" data-target="#loginModal">
+                                        <button class="btn btn-warning yekanFont normalFontSize" data-toggle="modal"
+                                                data-target="#loginModal">
                                             <i class="material-icons">lock</i>
                                             تغییر رمز عبور
                                             <div class="ripple-container"></div>
                                         </button>
                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="editCafeDiscounts">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h2 class="text-right yekanFont">ویرایش تخفیفات کافه شما</h2>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-md-6"></div>
+                                <div class="col-md-6" style="margin:0 auto !important;float:none !important;">
+                                    <h5 class="yekanFont text-right">اضافه کردن تخفیف جدید:</h5>
+                                    <div class="card card-form-horizontal"
+                                         style="box-shadow:0 0px 5px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12)">
+                                        <div class="card-content">
+                                            <form method="" action="">
+                                                <div class="row">
+                                                    <div class="col-sm-4">
+                                                        <input type="submit" value="اضافه کردن تخفیف"
+                                                               class="btn btn-info btn-block yekanFont">
+                                                    </div>
+                                                    <div class="col-sm-8">
+                                                        <div class="input-group">
+	        											<span class="input-group-addon">
+	        												<i class="material-icons">shopping_cart</i>
+	        											</span>
+                                                            <div class="form-group form-info">
+                                                                <input type="number" value=""
+                                                                       placeholder="درصد تخفیف را وارد کنید : 1 تا 100"
+                                                                       class="form-control yekanFont">
+                                                                <span class="material-input"></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
 
                                 </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6"></div>
+                                <div class="col-md-6" style="margin:0 auto !important;float:none !important;">
+                                    <h5 class="yekanFont text-right">
+                                        لیست تخفیفات موجود :
+                                    </h5>
+                                    <div class="card"
+                                         style="box-shadow:0 0px 5px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12)">
+                                        <div class="table-responsive">
+                                            <table class="table table-striped yekanFont">
+                                                <thead>
+                                                <tr>
+                                                    <th class="text-center">#</th>
+                                                    <!--<th class="tex  t-right">اسم کافه</th>-->
+                                                    <th class="text-center">میزان تخفیف</th>
+                                                    <th class="text-center">عملیات</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody id="myTable">
+                                                <tr>
+                                                    <td class="text-center">1</td>
+                                                    <!--<td>کافه اسنیدز</td>-->
+                                                    <td>20 درصد</td>
+                                                    <td class="td-actions text-center">
+                                                        <a href="#" type="button" rel="tooltip"
+                                                           class="btn btn-danger yekanFont" data-original-title=""
+                                                           title="">
+                                                            <i class="material-icons">clear</i>
+                                                            حذف تخفیف
+                                                            <div class="ripple-container"></div>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="text-center">2</td>
+                                                    <!--<td>کافه اسنیدز</td>-->
+                                                    <td>15 درصد</td>
+                                                    <td class="td-actions text-center">
+                                                        <a href="#" type="button" rel="tooltip"
+                                                           class="btn btn-danger yekanFont"
+                                                           data-original-title="" title="">
+                                                            <i class="material-icons">clear</i>
+                                                            حذف تخفیف
+                                                            <div class="ripple-container"></div>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <hr>
         </div>
     </div><!-- section -->
 </div>
